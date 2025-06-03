@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Маршрут 1 — Вело Бро</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 20px; background: #f9f9f9; }
+    h1 { color: #2c3e50; }
+    img { max-width: 100%; border-radius: 10px; margin-top: 10px; }
+    a.button { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #2980b9; color: white; text-decoration: none; border-radius: 5px; }
+    #map { width: 100%; height: 300px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Маршрут 1</h1>
+  <p>Это мой первый маршрут. Здесь я проехал около 15 км по центру Москвы.</p>
+  <img src="https://example.com/photo1.jpg"  alt="Фото маршрута">
+  <a class="button" href="/gpx/route1.gpx" download>Скачать GPX</a>
+
+  <h2>Трек</h2>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/> 
+
+  <script>
+    var map = L.map('map').setView([55.75, 37.62], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',  {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    fetch('/gpx/route1.gpx')
+      .then(res => res.text())
+      .then(data => {
+        const parser = new DOMParser();
+        const gpx = parser.parseFromString(data, "text/xml");
+        const track = gpx.querySelector("trk trkseg");
+
+        if (track) {
+          const points = [];
+          const xmlPoints = track.querySelectorAll("trkpt");
+          xmlPoints.forEach(pt => {
+            const lat = parseFloat(pt.getAttribute("lat"));
+            const lon = parseFloat(pt.getAttribute("lon"));
+            points.push([lat, lon]);
+          });
+
+          L.polyline(points, { color: '#2980b9' }).addTo(map);
+          map.fitBounds(points);
+        }
+      });
+  </script>
+</body>
+</html>
