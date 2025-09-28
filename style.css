@@ -86,10 +86,12 @@
     object-fit: cover;
 }
 .index-html-unlogged .view {
-    position: absolute;
-    left: calc(50.00% - 188px);
-    bottom: 2px;
-    width: 375px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    z-index: 99;
     height: 54px;
     background-color: #ffffff;
     border-top-width: 1px;
