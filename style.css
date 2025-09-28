@@ -1,6 +1,10 @@
 .index-html-unlogged {
     background-color: #ffffff;
-    width: 100%;
+    max-width: 375px;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
     min-width: 375px;
     min-height: 656px;
     position: relative;
@@ -9,17 +13,27 @@
 .index-html-unlogged .image {
     position: absolute;
     left: 0;
+    right: 0;
     bottom: 0;
+    max-width: 375px;
     width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
     height: auto;
-    max-width: 100vw;
     max-height: 35vh;
     object-fit: contain;
 }
 .index-html-unlogged .logo-telegram-wrapper {
     position: absolute;
-    left: 76px;
+    left: 0;
+    right: 0;
+    margin-left: 76px;
     bottom: 211px;
+    max-width: 375px;
+    width: 100vw;
+    margin-right: auto;
+    box-sizing: border-box;
     width: 46px;
     height: 46px;
     display: flex;
@@ -41,8 +55,14 @@
     object-fit: cover;
 }
 .index-html-unlogged .logo-dzen-wrapper {
-    left: calc(50.00% - 23px);
+    left: 0;
+    right: 0;
+    margin-left: calc(50.00% - 23px);
     bottom: 211px;
+    max-width: 375px;
+    width: 100vw;
+    margin-right: auto;
+    box-sizing: border-box;
     width: 46px;
     position: absolute;
     height: 46px;
@@ -64,8 +84,14 @@
     object-fit: cover;
 }
 .index-html-unlogged .logo-youtube-wrapper {
-    right: 76px;
+    left: 0;
+    right: 0;
+    margin-right: 76px;
     bottom: 211px;
+    max-width: 375px;
+    width: 100vw;
+    margin-left: auto;
+    box-sizing: border-box;
     width: 46px;
     position: absolute;
     height: 46px;
@@ -92,7 +118,11 @@
     left: 0;
     right: 0;
     bottom: 0;
+    max-width: 375px;
     width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
     z-index: 99;
     height: 54px;
     background-color: #ffffff;
@@ -179,7 +209,13 @@
 }
 .index-html-unlogged .div-wrapper {
     top: 120px;
-    left: calc(50.00% - 142px);
+    left: 0;
+    right: 0;
+    margin-left: calc(50.00% - 142px);
+    max-width: 375px;
+    width: 100vw;
+    margin-right: auto;
+    box-sizing: border-box;
     width: 284px;
     align-items: center;
     justify-content: center;
@@ -211,7 +247,13 @@
 }
 .index-html-unlogged .div-wrapper-2 {
     top: 213px;
-    left: calc(50.00% - 142px);
+    left: 0;
+    right: 0;
+    margin-left: calc(50.00% - 142px);
+    max-width: 375px;
+    width: 100vw;
+    margin-right: auto;
+    box-sizing: border-box;
     width: 284px;
     align-items: center;
     justify-content: center;
@@ -243,7 +285,13 @@
 }
 .index-html-unlogged .div-wrapper-3 {
     top: 306px;
-    left: calc(50.00% - 142px);
+    left: 0;
+    right: 0;
+    margin-left: calc(50.00% - 142px);
+    max-width: 375px;
+    width: 100vw;
+    margin-right: auto;
+    box-sizing: border-box;
     width: 284px;
     align-items: center;
     justify-content: center;
@@ -274,8 +322,14 @@
     white-space: nowrap;
 }
 .index-html-unlogged .div-wrapper-4 {
-    left: calc(50.00% - 142px);
+    left: 0;
+    right: 0;
+    margin-left: calc(50.00% - 142px);
     bottom: 91px;
+    max-width: 375px;
+    width: 100vw;
+    margin-right: auto;
+    box-sizing: border-box;
     width: 284px;
     align-items: center;
     justify-content: center;
@@ -304,4 +358,20 @@
     letter-spacing: 0;
     line-height: normal;
     white-space: nowrap;
+}
+
+/* Media query for devices with width <= 375px */
+@media (max-width: 375px) {
+    .index-html-unlogged,
+    .index-html-unlogged .image,
+    .index-html-unlogged .logo-telegram-wrapper,
+    .index-html-unlogged .logo-dzen-wrapper,
+    .index-html-unlogged .logo-youtube-wrapper,
+    .index-html-unlogged .view,
+    .index-html-unlogged .div-wrapper,
+    .index-html-unlogged .div-wrapper-2,
+    .index-html-unlogged .div-wrapper-3,
+    .index-html-unlogged .div-wrapper-4 {
+        max-width: 100vw;
+    }
 }
