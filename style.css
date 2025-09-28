@@ -1,15 +1,25 @@
+/* Base styles for responsive design */
+body {
+    width: 100vw;
+    max-width: 375px;
+    min-width: 0;
+    margin: 0 auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
 .index-html-unlogged {
     background-color: #ffffff;
-    max-width: 375px;
     width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 375px;
+    min-width: 0;
+    margin: 0 auto;
+    overflow-x: hidden;
     box-sizing: border-box;
-    min-width: 375px;
     min-height: 656px;
     position: relative;
-    overflow-x: hidden;
 }
+
 .index-html-unlogged .image {
     position: absolute;
     left: 0;
@@ -17,22 +27,22 @@
     bottom: 0;
     max-width: 375px;
     width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     box-sizing: border-box;
     height: auto;
     max-height: 35vh;
     object-fit: contain;
 }
+
 .index-html-unlogged .logo-telegram-wrapper {
     position: absolute;
     left: 0;
     right: 0;
+    margin: auto;
     margin-left: 76px;
     bottom: 211px;
     max-width: 375px;
     width: 100vw;
-    margin-right: auto;
     box-sizing: border-box;
     width: 46px;
     height: 46px;
@@ -48,23 +58,25 @@
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
 }
+
 .index-html-unlogged .logo-telegram {
     aspect-ratio: 1;
     width: 40px;
     height: 40px;
     object-fit: cover;
 }
+
 .index-html-unlogged .logo-dzen-wrapper {
+    position: absolute;
     left: 0;
     right: 0;
+    margin: auto;
     margin-left: calc(50.00% - 23px);
     bottom: 211px;
     max-width: 375px;
     width: 100vw;
-    margin-right: auto;
     box-sizing: border-box;
     width: 46px;
-    position: absolute;
     height: 46px;
     display: flex;
     align-items: center;
@@ -78,22 +90,24 @@
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
 }
+
 .index-html-unlogged .logo-dzen {
     width: 40px;
     height: 40px;
     object-fit: cover;
 }
+
 .index-html-unlogged .logo-youtube-wrapper {
+    position: absolute;
     left: 0;
     right: 0;
+    margin: auto;
     margin-right: 76px;
     bottom: 211px;
     max-width: 375px;
     width: 100vw;
-    margin-left: auto;
     box-sizing: border-box;
     width: 46px;
-    position: absolute;
     height: 46px;
     display: flex;
     align-items: center;
@@ -107,12 +121,14 @@
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
 }
+
 .index-html-unlogged .logo-youtube {
     aspect-ratio: 1;
     width: 40px;
     height: 40px;
     object-fit: cover;
 }
+
 .index-html-unlogged .view {
     position: fixed;
     left: 0;
@@ -120,8 +136,7 @@
     bottom: 0;
     max-width: 375px;
     width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     box-sizing: border-box;
     z-index: 99;
     height: 54px;
@@ -131,6 +146,7 @@
     border-color: #000000;
     box-shadow: 0px -4px 15px #00000040;
 }
+
 .index-html-unlogged .text-wrapper {
     position: absolute;
     top: 20px;
@@ -145,6 +161,7 @@
     line-height: normal;
     white-space: nowrap;
 }
+
 .index-html-unlogged .div {
     position: absolute;
     top: 20px;
@@ -159,6 +176,7 @@
     line-height: normal;
     white-space: nowrap;
 }
+
 .index-html-unlogged .text-wrapper-2 {
     position: absolute;
     top: 20px;
@@ -171,6 +189,7 @@
     line-height: normal;
     white-space: nowrap;
 }
+
 .index-html-unlogged .group {
     position: absolute;
     left: 46px;
@@ -181,11 +200,13 @@
     align-items: flex-end;
     gap: 1px;
 }
+
 .index-html-unlogged .logo {
     margin-bottom: 4px;
     width: 19px;
     height: 18px;
 }
+
 .index-html-unlogged .text-wrapper-3 {
     display: flex;
     align-items: center;
@@ -200,6 +221,7 @@
     line-height: normal;
     white-space: nowrap;
 }
+
 .index-html-unlogged .sign-in {
     position: absolute;
     right: 45px;
@@ -207,21 +229,24 @@
     width: 24px;
     height: 26px;
 }
+
 .index-html-unlogged .div-wrapper {
+    position: absolute;
     top: 120px;
     left: 0;
     right: 0;
+    margin: auto;
     margin-left: calc(50.00% - 142px);
     max-width: 375px;
     width: 100vw;
-    margin-right: auto;
     box-sizing: border-box;
     width: 284px;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
+    min-width: 0;
+    overflow-x: hidden;
     height: 46px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff73;
     border-radius: 10px;
     overflow: hidden;
@@ -231,6 +256,7 @@
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
 }
+
 .index-html-unlogged .text-wrapper-4 {
     margin-top: -2px;
     height: 24px;
@@ -245,21 +271,24 @@
     line-height: normal;
     white-space: nowrap;
 }
+
 .index-html-unlogged .div-wrapper-2 {
+    position: absolute;
     top: 213px;
     left: 0;
     right: 0;
+    margin: auto;
     margin-left: calc(50.00% - 142px);
     max-width: 375px;
     width: 100vw;
-    margin-right: auto;
     box-sizing: border-box;
     width: 284px;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
+    min-width: 0;
+    overflow-x: hidden;
     height: 46px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff73;
     border-radius: 10px;
     overflow: hidden;
@@ -269,6 +298,7 @@
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
 }
+
 .index-html-unlogged .text-wrapper-5 {
     margin-top: -2px;
     height: 24px;
@@ -283,21 +313,24 @@
     line-height: normal;
     white-space: nowrap;
 }
+
 .index-html-unlogged .div-wrapper-3 {
+    position: absolute;
     top: 306px;
     left: 0;
     right: 0;
+    margin: auto;
     margin-left: calc(50.00% - 142px);
     max-width: 375px;
     width: 100vw;
-    margin-right: auto;
     box-sizing: border-box;
     width: 284px;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
+    min-width: 0;
+    overflow-x: hidden;
     height: 46px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff73;
     border-radius: 10px;
     overflow: hidden;
@@ -307,6 +340,7 @@
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
 }
+
 .index-html-unlogged .text-wrapper-6 {
     width: 128px;
     margin-top: -2px;
@@ -321,21 +355,24 @@
     line-height: normal;
     white-space: nowrap;
 }
+
 .index-html-unlogged .div-wrapper-4 {
+    position: absolute;
     left: 0;
     right: 0;
+    margin: auto;
     margin-left: calc(50.00% - 142px);
     bottom: 91px;
     max-width: 375px;
     width: 100vw;
-    margin-right: auto;
     box-sizing: border-box;
     width: 284px;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
+    min-width: 0;
+    overflow-x: hidden;
     height: 46px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff73;
     border-radius: 10px;
     overflow: hidden;
@@ -345,6 +382,7 @@
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
 }
+
 .index-html-unlogged .text-wrapper-7 {
     width: 224px;
     margin-top: -2px;
@@ -362,6 +400,7 @@
 
 /* Media query for devices with width <= 375px */
 @media (max-width: 375px) {
+    body,
     .index-html-unlogged,
     .index-html-unlogged .image,
     .index-html-unlogged .logo-telegram-wrapper,
