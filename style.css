@@ -91,3 +91,14 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+@media (max-width: 375px) {
+    .main-btn, .map-btn {
+        width: 95vw;
+        font-size: 1em;
+        padding: 16px 0;
+    }
+    .social-links img {
+        width: 40px;
+        height: 40px;
+    }
+}
