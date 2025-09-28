@@ -4,15 +4,17 @@
     min-width: 375px;
     min-height: 656px;
     position: relative;
+    overflow-x: hidden;
 }
 .index-html-unlogged .image {
     position: absolute;
-    left: calc(50.00% - 188px);
-    bottom: -1px;
-    width: 375px;
-    height: 229px;
-    aspect-ratio: 1.63;
-    object-fit: cover;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+    max-width: 100vw;
+    max-height: 35vh;
+    object-fit: contain;
 }
 .index-html-unlogged .logo-telegram-wrapper {
     position: absolute;
