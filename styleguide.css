@@ -1,4 +1,6 @@
-/* styleguide.css - Style guide for Figma design system */
-
-/* Figma component styles will be defined here */
-/* This file provides design system styles for the Figma structure */
+:root {
+    --main-color: rgba(0, 0, 0, 1);
+    --example-text-in-form: rgba(136, 136, 136, 1);
+    --pressed-button: rgba(255, 254, 202, 1);
+    --preesd-button-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
