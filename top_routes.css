@@ -6,8 +6,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-family: 'Jura', sans-serif;
 }
-
 .top-routes-html .view {
     margin-left: 16px;
     width: 343px;
@@ -15,16 +15,14 @@
     display: flex;
     gap: 8px;
 }
-
 .top-routes-html .vector {
     width: 26px;
     height: 26px;
 }
-
 .top-routes-html .element {
     width: 275px;
     height: 24px;
-    font-family: "Jura-Regular", Helvetica;
+    font-family: 'Jura', sans-serif;
     font-weight: 400;
     font-size: 20px;
     text-align: center;
@@ -37,7 +35,6 @@
     letter-spacing: 0;
     line-height: normal;
 }
-
 .top-routes-html .group {
     width: 26px;
     height: 26px;
@@ -45,12 +42,10 @@
     flex-direction: column;
     gap: 11.1px;
 }
-
 .top-routes-html .img {
     width: 26px;
     height: 1.24px;
 }
-
 .top-routes-html .div {
     height: 135px;
     width: 343px;
@@ -65,7 +60,6 @@
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
 }
-
 .top-routes-html .IMG {
     position: absolute;
     top: 0;
@@ -73,12 +67,11 @@
     width: 343px;
     height: 135px;
 }
-
 .top-routes-html .text-wrapper {
     top: 10px;
     left: 10px;
     width: 14px;
-    font-family: "Jura-Bold", Helvetica;
+    font-family: 'Jura', sans-serif;
     font-weight: 700;
     position: absolute;
     color: #000000;
@@ -86,12 +79,11 @@
     letter-spacing: 0;
     line-height: normal;
 }
-
 .top-routes-html .text-wrapper-2 {
     top: 10px;
     left: 33px;
     width: 302px;
-    font-family: "Jura-Bold", Helvetica;
+    font-family: 'Jura', sans-serif;
     font-weight: 700;
     position: absolute;
     color: #000000;
@@ -99,11 +91,10 @@
     letter-spacing: 0;
     line-height: normal;
 }
-
 .top-routes-html .text-wrapper-3 {
     right: 10px;
     bottom: 10px;
-    font-family: "Jura-Regular", Helvetica;
+    font-family: 'Jura', sans-serif;
     font-weight: 400;
     text-align: right;
     white-space: nowrap;
@@ -113,12 +104,11 @@
     letter-spacing: 0;
     line-height: normal;
 }
-
 .top-routes-html .text-wrapper-4 {
     position: absolute;
     top: 106px;
     left: 33px;
-    font-family: "Jura-Regular", Helvetica;
+    font-family: 'Jura', sans-serif;
     font-weight: 400;
     color: #000000;
     font-size: 16px;
@@ -126,11 +116,10 @@
     line-height: normal;
     white-space: nowrap;
 }
-
 .top-routes-html .text-wrapper-5 {
     top: 77px;
     left: 33px;
-    font-family: "Jura-Regular", Helvetica;
+    font-family: 'Jura', sans-serif;
     font-weight: 400;
     white-space: nowrap;
     position: absolute;
@@ -139,11 +128,10 @@
     letter-spacing: 0;
     line-height: normal;
 }
-
 .top-routes-html .text-wrapper-6 {
     top: 48px;
     left: 33px;
-    font-family: "Jura-Regular", Helvetica;
+    font-family: 'Jura', sans-serif;
     font-weight: 400;
     white-space: nowrap;
     position: absolute;
@@ -152,7 +140,6 @@
     letter-spacing: 0;
     line-height: normal;
 }
-
 .top-routes-html .image {
     position: absolute;
     right: 81px;
@@ -162,7 +149,6 @@
     aspect-ratio: 1;
     object-fit: cover;
 }
-
 .top-routes-html .group-2 {
     position: absolute;
     top: 106px;
@@ -170,7 +156,6 @@
     width: 20px;
     height: 20px;
 }
-
 .top-routes-html .vector-2 {
     position: absolute;
     top: 2px;
@@ -178,7 +163,6 @@
     width: 6px;
     height: 7px;
 }
-
 .top-routes-html .vector-3 {
     position: absolute;
     top: 3px;
@@ -186,7 +170,6 @@
     width: 3px;
     height: 4px;
 }
-
 .top-routes-html .vector-4 {
     position: absolute;
     top: 0;
@@ -194,7 +177,6 @@
     width: 20px;
     height: 20px;
 }
-
 .top-routes-html .difficulty {
     position: absolute;
     top: 77px;
@@ -202,7 +184,6 @@
     width: 20px;
     height: 20px;
 }
-
 .top-routes-html .favorites {
     position: absolute;
     top: 48px;
@@ -210,7 +191,6 @@
     width: 20px;
     height: 20px;
 }
-
 .top-routes-html .IMG-2 {
     position: absolute;
     top: 0;
