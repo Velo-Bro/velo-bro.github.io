@@ -81,51 +81,53 @@
         
         <!-- Navigation Menu -->
         <div class="nav-overlay" id="nav-overlay"></div>
-        <div class="nav-menu" id="nav-menu">
+        <div class="nav-popup" id="nav-popup">
             <button class="nav-close" id="nav-close">
-                <img src="img/X.svg" alt="Close" />
+                <img src="img/close.svg" alt="Close" />
             </button>
-            <div class="nav-logo">
-                <img src="img/mini-logo.png" alt="ВелоБро" />
-                <span class="nav-logo-text">ВелоБро</span>
-            </div>
-            <div class="nav-links">
-                <button class="nav-link" onclick="window.location.href='index.html'">Главная</button>
-                <button class="nav-link" onclick="window.location.href='Top_routes.html'">Топ маршрутов</button>
-                <button class="nav-link" onclick="window.location.href='#'">Подбор по параметрам</button>
-                <button class="nav-link" onclick="window.location.href='#'">Мероприятия</button>
-                <button class="nav-link" onclick="window.location.href='#'">Все маршруты на карте</button>
-            </div>
-            <div class="nav-social">
-                <button class="nav-social-link" onclick="window.location.href='#'">
-                    <img src="img/logo-telegram.png" alt="Telegram" />
-                </button>
-                <button class="nav-social-link" onclick="window.location.href='#'">
-                    <img src="img/logo-dzen.png" alt="Dzen" />
-                </button>
-                <button class="nav-social-link" onclick="window.location.href='#'">
-                    <img src="img/logo-youtube.png" alt="YouTube" />
-                </button>
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <img src="img/logo.png" alt="ВелоБро" />
+                    <span class="nav-logo-text">ВелоБро</span>
+                </div>
+                <div class="nav-links">
+                    <button class="nav-link" onclick="window.location.href='index.html'">Главная</button>
+                    <button class="nav-link" onclick="window.location.href='Top_routes.html'">Топ маршрутов</button>
+                    <button class="nav-link" onclick="window.location.href='#'">Подбор по параметрам</button>
+                    <button class="nav-link" onclick="window.location.href='#'">Мероприятия</button>
+                    <button class="nav-link" onclick="window.location.href='#'">Все маршруты на карте</button>
+                </div>
+                <div class="nav-social">
+                    <button class="nav-social-link" onclick="window.location.href='#'">
+                        <img src="img/telegram.svg" alt="Telegram" />
+                    </button>
+                    <button class="nav-social-link" onclick="window.location.href='#'">
+                        <img src="img/dzen.svg" alt="Dzen" />
+                    </button>
+                    <button class="nav-social-link" onclick="window.location.href='#'">
+                        <img src="img/youtube.svg" alt="YouTube" />
+                    </button>
+                </div>
             </div>
         </div>
         
         <script>
             // Navigation menu functionality
             const hamburger = document.getElementById('menu-hamburger');
-            const navMenu = document.getElementById('nav-menu');
+            const navPopup = document.getElementById('nav-popup');
             const navOverlay = document.getElementById('nav-overlay');
             const navClose = document.getElementById('nav-close');
             
             // Open menu
             hamburger.addEventListener('click', function() {
-                navMenu.classList.add('active');
+                navPopup.classList.add('active');
                 navOverlay.classList.add('active');
                 document.body.style.overflow = 'hidden';
             });
             
             // Close menu
             function closeMenu() {
-                navMenu.classList.remove('active');
+                navPopup.classList.remove('active');
                 navOverlay.classList.remove('active');
                 document.body.style.overflow = '';
             }
