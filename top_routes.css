@@ -332,13 +332,12 @@
     -webkit-backdrop-filter: blur(2px) brightness(100%);
     z-index: 999;
     padding: 20px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 38px;
+    padding-bottom: 38px;
     box-sizing: border-box;
     display: none;
     opacity: 0;
     transition: all 0.3s ease;
-    overflow: hidden;
 }
 .nav-popup.active {
     display: block;
@@ -369,14 +368,19 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    max-height: calc(100vh - 80px);
+    max-height: calc(100vh - 116px);
 }
 .nav-logo {
     display: flex;
     align-items: center;
     gap: 8px;
+    min-height: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-bottom: 20px;
-    margin-top: 5px;
+    margin-top: 0;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 .nav-logo img {
     width: 19px;
@@ -428,6 +432,6 @@
     }
     
     .nav-content {
-        max-height: calc(100vh - 80px);
+        max-height: calc(100vh - 116px);
     }
 }
