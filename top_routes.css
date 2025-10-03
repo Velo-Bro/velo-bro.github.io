@@ -220,6 +220,78 @@
     height: 135px;
     object-fit: cover;
 }
+
+/* Button styles from index.html */
+.div-wrapper,
+.div-wrapper-2,
+.div-wrapper-3,
+.div-wrapper-4 {
+    width: 284px;
+    min-width: 0;
+    overflow-x: hidden;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff73;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 15px 1px #00000040;
+    backdrop-filter: blur(2px) brightness(100%);
+    -webkit-backdrop-filter: blur(2px) brightness(100%);
+    font-family: "Jura", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.div-wrapper:active,
+.div-wrapper-2:active,
+.div-wrapper-3:active,
+.div-wrapper-4:active {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+}
+
+.div-wrapper:focus,
+.div-wrapper-2:focus,
+.div-wrapper-3:focus,
+.div-wrapper-4:focus {
+    outline: none;
+    border-color: #bbb;
+}
+
+/* Social media wrapper styles from index.html */
+.logo-telegram-wrapper,
+.logo-dzen-wrapper,
+.logo-youtube-wrapper {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff73;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 15px 1px #00000040;
+    backdrop-filter: blur(2px) brightness(100%);
+    -webkit-backdrop-filter: blur(2px) brightness(100%);
+    cursor: pointer;
+}
+
+.logo-telegram,
+.logo-dzen,
+.logo-youtube {
+    aspect-ratio: 1;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
 /* Popup Navigation Menu Styles - Full Width Top */
 .nav-overlay {
     position: fixed;
@@ -324,65 +396,12 @@
     overflow-y: auto;
     padding-right: 5px;
     margin-bottom: 20px;
-}
-.nav-link {
-    font-family: 'Jura', Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: #000000;
-    text-decoration: none;
-    letter-spacing: 0;
-    line-height: normal;
-    text-align: left;
-    background: #ffffff73;
-    border: 1px solid #000000;
-    border-radius: 16px;
-    cursor: pointer;
-    padding: 12px 16px;
-    transition: all 0.2s ease;
-    box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(2px) brightness(100%);
-    -webkit-backdrop-filter: blur(2px) brightness(100%);
-}
-.nav-link:hover {
-    transform: scale(1.02);
-}
-.nav-link:active {
-    transform: scale(0.98);
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
 }
 .nav-social {
     display: flex;
     gap: 20px;
-    justify-content: flex-start;
-}
-.nav-social-link {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    width: 46px;
-    height: 46px;
-    background-color: #ffffff73;
-    border-radius: 16px;
-    border: 1px solid #000000;
-    box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(2px) brightness(100%);
-    -webkit-backdrop-filter: blur(2px) brightness(100%);
-    cursor: pointer;
-    transition: all 0.2s ease;
-    padding: 0;
-}
-.nav-social-link:hover {
-    transform: scale(1.05);
-}
-.nav-social-link:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.nav-social-link img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
 }
 /* Media query for mobile screens */
 @media (max-width: 375px) {
