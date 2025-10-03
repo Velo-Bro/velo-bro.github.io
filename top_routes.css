@@ -220,7 +220,6 @@
     height: 135px;
     object-fit: cover;
 }
-
 /* Button styles from index.html */
 .div-wrapper,
 .div-wrapper-2,
@@ -247,14 +246,12 @@
     text-decoration: none;
     cursor: pointer;
 }
-
 .div-wrapper:active,
 .div-wrapper-2:active,
 .div-wrapper-3:active,
 .div-wrapper-4:active {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
 }
-
 .div-wrapper:focus,
 .div-wrapper-2:focus,
 .div-wrapper-3:focus,
@@ -262,7 +259,13 @@
     outline: none;
     border-color: #bbb;
 }
-
+/* Text styles for nav menu buttons */
+.text-wrapper-4,
+.text-wrapper-5,
+.text-wrapper-6,
+.text-wrapper-7 {
+    font-size: 20px;
+}
 /* Social media wrapper styles from index.html */
 .logo-telegram-wrapper,
 .logo-dzen-wrapper,
@@ -282,7 +285,6 @@
     -webkit-backdrop-filter: blur(2px) brightness(100%);
     cursor: pointer;
 }
-
 .logo-telegram,
 .logo-dzen,
 .logo-youtube {
@@ -291,7 +293,6 @@
     height: 40px;
     object-fit: cover;
 }
-
 /* Popup Navigation Menu Styles - Full Width Top */
 .nav-overlay {
     position: fixed;
@@ -331,6 +332,8 @@
     -webkit-backdrop-filter: blur(2px) brightness(100%);
     z-index: 999;
     padding: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     box-sizing: border-box;
     display: none;
     opacity: 0;
@@ -386,7 +389,7 @@
     font-size: 27px;
     color: #000000;
     letter-spacing: 0;
-    line-height: normal;
+    line-height: 26px;
 }
 .nav-links {
     display: flex;
