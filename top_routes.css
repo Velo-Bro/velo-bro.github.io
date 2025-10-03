@@ -344,11 +344,8 @@
     transform: translateY(0);
 }
 .nav-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 24px;
-    height: 24px;
+    width: 27px;
+    height: 27px;
     background: none;
     border: none;
     cursor: pointer;
@@ -356,7 +353,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    flex-shrink: 0;
 }
 .nav-close img {
     width: 100%;
@@ -371,9 +368,11 @@
 }
 .nav-logo {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 8px;
-    min-height: 56px;
+    min-height: 27px;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 20px;
@@ -385,6 +384,7 @@
     width: 19px;
     height: 18px;
     object-fit: contain;
+    flex-shrink: 0;
 }
 .nav-logo-text {
     font-family: 'Jura', Helvetica, Arial, sans-serif;
@@ -392,7 +392,8 @@
     font-size: 27px;
     color: #000000;
     letter-spacing: 0;
-    line-height: 26px;
+    line-height: 27px;
+    flex-grow: 1;
 }
 .nav-links {
     display: flex;
