@@ -353,8 +353,8 @@
     -webkit-backdrop-filter: blur(17px);
     z-index: 999;
     padding: 20px;
-    padding-top: 84px;
-    padding-bottom: 84px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     box-sizing: border-box;
     display: none;
     opacity: 0;
@@ -393,7 +393,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    max-height: calc(100vh - 192px);
+    max-height: calc(100vh - 164px);
 }
 .nav-links {
     display: flex;
@@ -429,11 +429,11 @@
     
     .nav-popup {
         max-height: calc(100vh - 40px);
-        padding-top: 84px;
-        padding-bottom: 84px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     
     .nav-content {
-        max-height: calc(100vh - 192px);
+        max-height: calc(100vh - 164px);
     }
 }
