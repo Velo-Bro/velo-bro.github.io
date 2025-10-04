@@ -258,6 +258,13 @@
     outline: none;
     border-color: #bbb;
 }
+/* Specific style for "Все маршруты на карте" button */
+.div-wrapper-4 {
+    background-image: url('img/image-14.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* Text styles for nav menu buttons */
 .text-wrapper-4,
 .text-wrapper-5,
