@@ -292,7 +292,7 @@
     height: 40px;
     object-fit: cover;
 }
-/* Popup Navigation Menu Styles - Full Width Top */
+/* Popup Navigation Menu Styles */
 .nav-overlay {
     position: fixed;
     top: 0;
@@ -331,36 +331,24 @@
     -webkit-backdrop-filter: blur(2px) brightness(100%);
     z-index: 999;
     padding: 20px;
-    padding-top: 52px;
+    padding-top: 70px;
     padding-bottom: 52px;
     box-sizing: border-box;
     display: none;
     opacity: 0;
     transition: all 0.3s ease;
+    position: relative;
 }
 .nav-popup.active {
     display: block;
     opacity: 1;
     transform: translateY(0);
 }
-/* New flex-row header layout */
-.nav-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 20px;
-    margin: -20px -20px 20px -20px;
-    box-sizing: border-box;
-}
-.nav-header img {
-    display: none;
-}
-.nav-header-text {
-    display: none;
-}
+/* Close button positioned absolutely in top-right */
 .nav-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     width: 28px;
     height: 28px;
     background: none;
@@ -371,12 +359,14 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    z-index: 1000;
 }
 .nav-close img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+/* Content container with flex column layout */
 .nav-content {
     display: flex;
     flex-direction: column;
@@ -417,7 +407,7 @@
     
     .nav-popup {
         max-height: calc(100vh - 40px);
-        padding-top: 52px;
+        padding-top: 70px;
         padding-bottom: 52px;
     }
     
