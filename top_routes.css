@@ -278,6 +278,11 @@
     pointer-events: none;
     z-index: 1;
 }
+.div-wrapper-4 > span,
+.div-wrapper-4 .text-wrapper-7 {
+    position: relative;
+    z-index: 2;
+}
 /* Text styles for nav menu buttons */
 .text-wrapper-4,
 .text-wrapper-5,
