@@ -354,7 +354,7 @@
     z-index: 999;
     padding: 20px;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
     box-sizing: border-box;
     display: none;
     opacity: 0;
@@ -409,6 +409,7 @@
     display: flex;
     gap: 20px;
     justify-content: center;
+    margin-bottom: 30px;
 }
 /* Media query for mobile screens */
 @media (max-width: 375px) {
@@ -430,7 +431,7 @@
     .nav-popup {
         max-height: calc(100vh - 40px);
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 0;
     }
     
     .nav-content {
