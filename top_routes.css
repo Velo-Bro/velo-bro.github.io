@@ -346,12 +346,15 @@
     height: 100%;
     background-color: transparent;
     z-index: 998;
-    display: none;
+    /* replaced display toggling with pointer-events + opacity */
+    display: block;
+    pointer-events: none;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 .nav-overlay.active {
-    display: flex;
+    /* display removed; interactivity via pointer-events */
+    pointer-events: all;
     opacity: 1;
     align-items: flex-start;
     justify-content: center;
@@ -375,13 +378,16 @@
     padding-top: 60px;
     padding-bottom: 0;
     box-sizing: border-box;
-    display: none;
+    /* replaced display toggling with pointer-events + opacity */
+    display: block;
+    pointer-events: none;
     opacity: 0;
     transform: translateY(-120%);
     transition: transform 0.35s cubic-bezier(0.7, 0, 0.3, 1), opacity 0.3s;
 }
 .nav-popup.active {
-    display: block;
+    /* display removed; interactivity via pointer-events */
+    pointer-events: all;
     opacity: 1;
     transform: translateY(0);
 }
