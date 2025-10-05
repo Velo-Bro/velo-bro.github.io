@@ -1,209 +1,225 @@
+/* yahroma_dubna.css redesigned to match top_routes.css styles */
 .yahroma-dubna-html {
     background-color: #ffffff;
-    width: 100%;
-    min-width: 375px;
-    min-height: 1514px;
+    width: 100vw;
+    max-width: 375px;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 686px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-family: 'Jura', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-top: 80px; /* push below fixed header */
+    padding-bottom: 20px; /* required: padding-bottom основной обёртки */
 }
 
-.yahroma-dubna-html .frame {
-    width: 375px;
-    height: 56px;
+/* Fixed header unified with top routes */
+.yahroma-dubna-html .view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 4px 15px 0 rgba(0,0,0,0.25);
+    border: none;
+    border-radius: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 15px #00000040;
-}
-
-.yahroma-dubna-html .view {
-    width: 343px;
-    display: flex;
     gap: 8px;
 }
-
-.yahroma-dubna-html .img {
+.yahroma-dubna-html .vector {
     width: 26px;
     height: 26px;
+    flex-shrink: 0;
 }
-
-.yahroma-dubna-html .text-wrapper {
-    width: 275px;
+.yahroma-dubna-html .element {
+    width: calc(100vw - 105px);
+    max-width: 275px;
     height: 24px;
-    font-family: "Jura-Regular", Helvetica;
     font-weight: 400;
-    color: #000000;
     font-size: 20px;
     text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-}
-
-.yahroma-dubna-html .div {
-    margin-left: 16px;
-    width: 343px;
-    display: flex;
-}
-
-.yahroma-dubna-html .favorites {
-    margin-top: 2px;
-    width: 20px;
-    height: 20px;
-}
-
-.yahroma-dubna-html .text-wrapper-2 {
-    width: 36px;
-    margin-left: 5px;
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    height: 24px;
     color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
 }
-
-.yahroma-dubna-html .award {
-    margin-top: 2px;
-    width: 20px;
-    height: 20px;
-    margin-left: 20px;
+.yahroma-dubna-html .group {
+    width: 26px;
+    height: 26px;
     display: flex;
     flex-direction: column;
-    gap: 0.6px;
+    gap: 11.1px;
+    flex-shrink: 0;
+    cursor: pointer;
 }
 
-.yahroma-dubna-html .vector {
-    width: 20px;
-    height: 16.83px;
-}
-
-.yahroma-dubna-html .vector-2 {
-    margin-left: 4.4px;
-    width: 11.2px;
-    height: 2.59px;
-}
-
-.yahroma-dubna-html .text-wrapper-3 {
-    width: 28px;
-    margin-left: 5px;
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    height: 24px;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .text-wrapper-4 {
-    width: 168px;
-    height: 24px;
-    margin-left: 16px;
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .image {
-    margin-top: 2px;
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-    aspect-ratio: 1;
-    object-fit: cover;
-}
-
-.yahroma-dubna-html .view-2 {
-    width: 375px;
-    height: 120px;
+/* Reusable card like top_routes */
+.yahroma-dubna-html .div {
+    height: 135px;
+    width: calc(100vw - 32px);
+    max-width: 343px;
+    align-self: center;
     position: relative;
     background-color: #ffffff73;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-color: #000000;
-    box-shadow: 0px 4px 15px 1px #00000040;
-}
-
-.yahroma-dubna-html .vlcsnap {
-    position: absolute;
-    width: 57.07%;
-    height: 100%;
-    top: 0;
-    left: 69.60%;
-    object-fit: cover;
-}
-
-.yahroma-dubna-html .IMG {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 195px;
-    height: 120px;
-    aspect-ratio: 1.62;
-}
-
-.yahroma-dubna-html .vlcsnap-2 {
-    position: absolute;
-    width: 32.00%;
-    height: 55.83%;
-    top: 0;
-    left: 51.73%;
-    object-fit: cover;
-}
-
-.yahroma-dubna-html .div-wrapper {
-    position: absolute;
-    top: 94px;
-    left: calc(50.00% + 158px);
-    width: 24px;
-    height: 21px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: #ffffff4c;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
-    border: 1px solid;
-    border-color: #000000;
+    border: 1px solid #000000;
     box-shadow: 0px 4px 15px 1px #00000040;
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
 }
-
-.yahroma-dubna-html .text-wrapper-5 {
-    margin-top: 1px;
-    margin-right: 1px;
-    width: 22px;
-    font-family: "Jura-Bold", Helvetica;
+.yahroma-dubna-html .IMG,
+.yahroma-dubna-html .IMG-2 { /* gallery main image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+}
+.yahroma-dubna-html .text-wrapper { /* index number */
+    top: 10px;
+    left: 10px;
+    width: 14px;
     font-weight: 700;
-    text-align: center;
-    white-space: nowrap;
-    height: 24px;
+    position: absolute;
     color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
+    font-size: 16px;
+}
+.yahroma-dubna-html .text-wrapper-2 { /* title */
+    top: 10px;
+    left: 33px;
+    right: 10px;
+    width: auto;
+    max-width: calc(100% - 43px);
+    font-weight: 700;
+    position: absolute;
+    color: #000000;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.yahroma-dubna-html .text-wrapper-3 { /* author */
+    right: 10px;
+    bottom: 10px;
+    font-weight: 400;
+    text-align: right;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    font-size: 16px;
+}
+.yahroma-dubna-html .text-wrapper-4 { /* distance */
+    position: absolute;
+    top: 106px;
+    left: 33px;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    white-space: nowrap;
+}
+.yahroma-dubna-html .text-wrapper-5 { /* difficulty */
+    top: 77px;
+    left: 33px;
+    font-weight: 400;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    font-size: 16px;
+}
+.yahroma-dubna-html .text-wrapper-6 { /* likes */
+    top: 48px;
+    left: 33px;
+    font-weight: 400;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    font-size: 16px;
+}
+.yahroma-dubna-html .image { /* logo */
+    position: absolute;
+    right: 81px;
+    bottom: 9px;
+    width: 20px;
+    height: 20px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.yahroma-dubna-html .group-2 { /* distance icon wrap */
+    position: absolute;
+    top: 106px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+}
+.yahroma-dubna-html .distance { width: 20px; height: 20px; }
+.yahroma-dubna-html .difficulty { position: absolute; top: 77px; left: 10px; width: 20px; height: 20px; }
+.yahroma-dubna-html .favorites { position: absolute; top: 48px; left: 10px; width: 20px; height: 20px; }
+
+/* Gallery strip below card */
+.yahroma-dubna-html .view-2 {
+    width: calc(100vw - 32px);
+    max-width: 343px;
+    height: 120px;
+    position: relative;
+    align-self: center;
+    background-color: #ffffff73;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    box-shadow: 0px 4px 15px 1px #00000040;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.yahroma-dubna-html .vlcsnap,
+.yahroma-dubna-html .vlcsnap-2 {
+    position: absolute;
+    object-fit: cover;
+}
+.yahroma-dubna-html .vlcsnap { left: 51.73%; top: 0; width: 32%; height: 55.83%; }
+.yahroma-dubna-html .vlcsnap-2 { left: 69.6%; top: 0; width: 30.4%; height: 100%; }
+.yahroma-dubna-html .div-wrapper { /* counter bubble */
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    width: 24px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff4c;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 15px 1px #00000040;
+    backdrop-filter: blur(2px) brightness(100%);
+    -webkit-backdrop-filter: blur(2px) brightness(100%);
+}
+.yahroma-dubna-html .text-wrapper-7 { /* gallery count */
+    font-weight: 700;
+    color: #000;
+    font-size: 16px;
 }
 
+/* Buttons row */
+.yahroma-dubna-html .div-2 {
+    width: calc(100vw - 32px);
+    max-width: 343px;
+    align-self: center;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
 .yahroma-dubna-html .view-3 {
     width: 163px;
     height: 46px;
@@ -211,644 +227,121 @@
     background-color: #ffffff73;
     border-radius: 10px;
     overflow: hidden;
-    border: 1px solid;
-    border-color: #000000;
+    border: 1px solid #000000;
     box-shadow: 0px 4px 15px 1px #00000040;
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
 }
-
-.yahroma-dubna-html .image-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 163px;
-    height: 46px;
-    aspect-ratio: 0.91;
-}
-
-.yahroma-dubna-html .text-wrapper-6 {
-    position: absolute;
-    top: calc(50.00% - 13px);
-    left: calc(50.00% - 42px);
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    text-align: center;
-    white-space: nowrap;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .image-3 {
-    margin-top: -12px;
-    width: 105px;
-    height: 78px;
-    margin-left: 1px;
-}
-
+.yahroma-dubna-html .image-2 { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.yahroma-dubna-html .text-wrapper-8 { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 20px; }
+.yahroma-dubna-html .image-3 { width: 105px; height: 78px; }
 .yahroma-dubna-html .group-wrapper {
     width: 74px;
     height: 46px;
     background-color: #ffffff73;
     border-radius: 10px;
     overflow: hidden;
-    border: 1px solid;
-    border-color: #000000;
+    border: 1px solid #000000;
     box-shadow: 0px 4px 15px 1px #00000040;
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
 }
+.yahroma-dubna-html .group { position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+.yahroma-dubna-html .comment { width: 24px; height: 24px; }
+.yahroma-dubna-html .text-wrapper-9 { position: absolute; bottom: 6px; right: 8px; font-size: 16px; }
 
-.yahroma-dubna-html .group {
-    position: relative;
-    width: 47.39%;
-    height: 67.39%;
-    top: 17.39%;
-    left: 28.38%;
-}
-
-.yahroma-dubna-html .comment {
-    position: absolute;
-    width: 94.30%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-.yahroma-dubna-html .text-wrapper-7 {
-    position: absolute;
-    top: calc(50.00% - 12px);
-    left: calc(50.00% - 16px);
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    text-align: center;
-    white-space: nowrap;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
+/* Characteristics block */
 .yahroma-dubna-html .view-4 {
-    margin-left: 16px;
-    width: 343px;
-    height: 135px;
+    width: calc(100vw - 32px);
+    max-width: 343px;
+    align-self: center;
+    height: 170px;
     position: relative;
 }
-
-.yahroma-dubna-html .text-wrapper-8 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 168px;
-    font-family: "Jura-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .text-wrapper-9 {
-    position: absolute;
-    top: 0;
-    left: 175px;
-    width: 168px;
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    text-align: right;
-    letter-spacing: 0;
-    line-height: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-}
-
-.yahroma-dubna-html .text-wrapper-10 {
-    position: absolute;
-    top: 29px;
-    left: 148px;
-    width: 195px;
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .text-wrapper-11 {
-    position: absolute;
-    top: 58px;
-    left: 148px;
-    width: 195px;
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .text-wrapper-12 {
-    position: absolute;
-    top: 116px;
-    left: 148px;
-    width: 195px;
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .text-wrapper-13 {
-    position: absolute;
-    top: 87px;
-    left: 244px;
-    width: 35px;
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .text-wrapper-14 {
-    position: absolute;
-    top: 87px;
-    left: 308px;
-    width: 35px;
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .text-wrapper-15 {
-    position: absolute;
-    top: 29px;
-    left: 0;
-    width: 168px;
-    font-family: "Jura-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .text-wrapper-16 {
-    position: absolute;
-    top: 58px;
-    left: 0;
-    width: 143px;
-    font-family: "Jura-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .text-wrapper-17 {
-    position: absolute;
-    top: 116px;
-    left: 0;
-    width: 143px;
-    font-family: "Jura-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .text-wrapper-18 {
-    position: absolute;
-    top: 87px;
-    left: 0;
-    width: 168px;
-    font-family: "Jura-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .vector-3 {
-    position: absolute;
-    top: 89px;
-    right: 102px;
-    width: 16px;
-    height: 16px;
-}
-
-.yahroma-dubna-html .vector-4 {
-    position: absolute;
-    top: 89px;
-    right: 38px;
-    width: 16px;
-    height: 16px;
-}
-
-.yahroma-dubna-html .view-5 {
-    margin-left: 16px;
-    width: 343px;
-    height: 171px;
-    display: flex;
-    flex-direction: column;
-}
-
+.yahroma-dubna-html .text-wrapper-10,
+.yahroma-dubna-html .text-wrapper-12,
+.yahroma-dubna-html .text-wrapper-14,
+.yahroma-dubna-html .text-wrapper-16,
 .yahroma-dubna-html .text-wrapper-19 {
-    width: 143px;
-    height: 19px;
-    font-family: "Jura-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
+    position: absolute; left: 0; font-weight: 700; font-size: 16px; color: #000;
 }
-
-.yahroma-dubna-html .p {
-    width: 343px;
-    height: 152px;
-    font-family: "Jura-Light", Helvetica;
-    font-weight: 300;
-    color: #000000;
-    font-size: 16px;
-    text-align: justify;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 7;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .view-6 {
-    margin-left: 16px;
-    width: 343px;
-    height: 437px;
-    display: flex;
-    flex-direction: column;
-}
-
-.yahroma-dubna-html .element {
-    width: 343px;
-    height: 418px;
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    text-align: justify;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 21;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .span {
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    letter-spacing: 0;
-}
-
+.yahroma-dubna-html .text-wrapper-11,
+.yahroma-dubna-html .text-wrapper-13,
+.yahroma-dubna-html .text-wrapper-15,
+.yahroma-dubna-html .text-wrapper-17,
+.yahroma-dubna-html .text-wrapper-18,
 .yahroma-dubna-html .text-wrapper-20 {
-    font-family: "Jura-Light", Helvetica;
-    font-weight: 300;
+    position: absolute; right: 0; font-weight: 400; font-size: 16px; color: #000; text-align: right;
 }
+.yahroma-dubna-html .text-wrapper-10 { top: 0; }
+.yahroma-dubna-html .text-wrapper-11 { top: 0; }
+.yahroma-dubna-html .text-wrapper-12 { top: 29px; }
+.yahroma-dubna-html .text-wrapper-13 { top: 29px; }
+.yahroma-dubna-html .text-wrapper-14 { top: 58px; }
+.yahroma-dubna-html .text-wrapper-15 { top: 58px; }
+.yahroma-dubna-html .text-wrapper-16 { top: 87px; }
+.yahroma-dubna-html .text-wrapper-17 { top: 87px; right: 102px; }
+.yahroma-dubna-html .vector-3 { position: absolute; top: 89px; right: 82px; width: 16px; height: 16px; }
+.yahroma-dubna-html .text-wrapper-18 { top: 87px; }
+.yahroma-dubna-html .vector-4 { position: absolute; top: 89px; right: 18px; width: 16px; height: 16px; }
+.yahroma-dubna-html .text-wrapper-19 { top: 116px; }
+.yahroma-dubna-html .text-wrapper-20 { top: 116px; }
 
-.yahroma-dubna-html .view-7 {
-    margin-left: 16px;
-    width: 343px;
-    height: 57px;
+/* Description and text blocks */
+.yahroma-dubna-html .view-5,
+.yahroma-dubna-html .view-6,
+.yahroma-dubna-html .view-7,
+.yahroma-dubna-html .view-8,
+.yahroma-dubna-html .view-11 {
+    width: calc(100vw - 32px);
+    max-width: 343px;
+    align-self: center;
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
+.yahroma-dubna-html .text-wrapper-21 { font-weight: 700; font-size: 16px; }
+.yahroma-dubna-html .p, .yahroma-dubna-html .element { font-weight: 300; font-size: 16px; color: #000; text-align: justify; }
 
-.yahroma-dubna-html .text-wrapper-21 {
-    width: 154px;
-    height: 19px;
-    font-family: "Jura-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .text-wrapper-22 {
-    width: 343px;
-    height: 19px;
-    font-family: "Jura-Light", Helvetica;
-    font-weight: 300;
-    color: #000000;
-    font-size: 16px;
-    text-align: justify;
-    text-decoration: underline;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 0;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .view-8 {
-    margin-left: 16px;
-    width: 343px;
-    height: 121px;
-    position: relative;
-}
-
-.yahroma-dubna-html .send-wrapper {
-    position: absolute;
-    left: 299px;
-    bottom: 0;
-    width: 44px;
-    height: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff73;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid;
-    border-color: #000000;
-    box-shadow: 0px 4px 15px 1px #00000040;
-    backdrop-filter: blur(2px) brightness(100%);
-    -webkit-backdrop-filter: blur(2px) brightness(100%);
-}
-
-.yahroma-dubna-html .send {
-    margin-top: 1px;
-    height: 21px;
-    margin-left: 3px;
-    width: 21px;
-}
-
-.yahroma-dubna-html .attach-wrapper {
-    position: absolute;
-    top: 24px;
-    left: 299px;
-    width: 44px;
-    height: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff73;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid;
-    border-color: #000000;
-    box-shadow: 0px 4px 15px 1px #00000040;
-    backdrop-filter: blur(2px) brightness(100%);
-    -webkit-backdrop-filter: blur(2px) brightness(100%);
-}
-
-.yahroma-dubna-html .attach {
-    height: 22px;
-    margin-left: 1px;
-    width: 21px;
-}
-
-.yahroma-dubna-html .text-wrapper-23 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 154px;
-    font-family: "Jura-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-}
-
-.yahroma-dubna-html .view-9 {
-    position: absolute;
-    top: 24px;
-    left: 0;
-    width: 283px;
-    height: 22px;
-    display: flex;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid;
-    border-color: #000000;
-    box-shadow: 0px 4px 15px 1px #00000040;
-    backdrop-filter: blur(2px) brightness(100%);
-    -webkit-backdrop-filter: blur(2px) brightness(100%);
-}
-
-.yahroma-dubna-html .text-wrapper-24 {
-    margin-top: 2px;
-    width: 271px;
-    height: 18px;
-    margin-left: 6px;
-    font-family: "Inter-Light", Helvetica;
-    font-weight: 300;
-    color: #888888;
-    font-size: 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
+/* Comments input fields (visual only) */
+.yahroma-dubna-html .view-9,
 .yahroma-dubna-html .view-10 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 283px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #f4f4f4;
     border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid;
-    border-color: #000000;
+    border: 1px solid #000;
     box-shadow: 0px 4px 15px 1px #00000040;
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
+    padding: 8px 10px;
 }
+.yahroma-dubna-html .text-wrapper-24,
+.yahroma-dubna-html .text-wrapper-25 { color: #888; font-size: 14px; }
 
-.yahroma-dubna-html .text-wrapper-25 {
-    height: 66px;
-    width: 271px;
-    font-family: "Inter-Light", Helvetica;
-    font-weight: 300;
-    color: #888888;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: normal;
+/* Send/attach buttons */
+.yahroma-dubna-html .attach-wrapper,
+.yahroma-dubna-html .send-wrapper {
+    width: 44px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff73;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 15px 1px #00000040;
 }
+.yahroma-dubna-html .view-8 { position: relative; }
+.yahroma-dubna-html .attach-wrapper { position: absolute; top: 24px; right: 0; }
+.yahroma-dubna-html .send-wrapper { position: absolute; right: 0; bottom: 0; }
+.yahroma-dubna-html .attach, .yahroma-dubna-html .send { width: 22px; height: 22px; }
 
-.yahroma-dubna-html .view-11 {
-    margin-left: 16px;
-    width: 343px;
-    height: 147px;
-    position: relative;
-}
+/* Comment example card pieces */
+.yahroma-dubna-html .image-4 { width: 20px; height: 20px; }
+.yahroma-dubna-html .text-wrapper-26 { font-size: 16px; }
+.yahroma-dubna-html .text-wrapper-27 { font-size: 12px; color: #666; }
+.yahroma-dubna-html .text-wrapper-28 { font-size: 14px; }
+.yahroma-dubna-html .IMG-3, .yahroma-dubna-html .vlcsnap-3 { width: 89px; height: 58px; object-fit: cover; }
 
-.yahroma-dubna-html .text-wrapper-26 {
-    position: absolute;
-    top: 0;
-    right: 150px;
-    width: 168px;
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .text-wrapper-27 {
-    position: absolute;
-    top: 24px;
-    right: 0;
-    width: 343px;
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .IMG-2 {
-    position: absolute;
-    top: 97px;
-    left: -4px;
-    width: 89px;
-    height: 58px;
-}
-
-.yahroma-dubna-html .vlcsnap-3 {
-    position: absolute;
-    width: 25.95%;
-    top: 97px;
-    left: 23.62%;
-    height: 58px;
-    object-fit: cover;
-}
-
-.yahroma-dubna-html .text-wrapper-28 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-family: "Jura-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    text-align: right;
-    white-space: nowrap;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.yahroma-dubna-html .image-4 {
-    position: absolute;
-    top: 0;
-    right: 323px;
-    width: 20px;
-    height: 20px;
-    aspect-ratio: 1;
-    object-fit: cover;
-}
+/* Navigation menu styles copied from top_routes */
+.nav-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: transparent; z-index: 998; display: block; pointer-events: none; opacity: 0; transition: opacity 0.3s ease;
