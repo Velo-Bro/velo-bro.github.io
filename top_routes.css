@@ -1,131 +1,73 @@
 /* top_routes.css */
 .top-routes-html 
 {
-    
-background-color: #ffffff;
-    
-width: 100vw;
-    
-max-width: 375px;
-    
-min-width: 0;
-    
-margin-left: auto;
-    
-margin-right: auto;
-    
-min-height: 686px;
-    
-display: flex;
-    
-flex-direction: column;
-    
-gap: 20px;
-    
-font-family: 'Jura', sans-serif;
-    
-overflow-x: hidden;
-    
-box-sizing: border-box;
-    
-/* Push content below fixed header */
-    
-margin-top: 80px;
-    
-padding-bottom: 20px;
+    background-color: #ffffff;
+    width: 100vw;
+    max-width: 375px;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 686px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Jura', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    /* Push content below fixed header */
+    margin-top: 80px;
+    padding-bottom: 20px;
 }
 .top-routes-html .view 
 {
-    
-/* Fixed top navigation bar aligned per spec */
-    
-position: fixed;
-    
-top: 0;
-    
-left: 0;
-    
-width: 100vw;
-    
-z-index: 100;
-    
-background: #fff;
-    
-/* bottom-only shadow */
-    
-box-shadow: 0 4px 15px 0 rgba(0,0,0,0.25);
-    
-/* remove borders and radius */
-    
-border: none;
-    
-border-radius: 0;
-    
-/* center content with 15px vertical padding */
-    
-padding-top: 15px;
-    
-padding-bottom: 15px;
-    
-display: flex;
-    
-align-items: center;
-    
-justify-content: center;
-    
-/* remove external margins/constraints */
-    
-margin: 0;
-    
-max-width: none;
-    
-padding-right: 0;
-    
-gap: 8px;
-    
-box-sizing: border-box;
-    
-overflow-x: hidden;
+    /* Fixed top navigation bar aligned per spec */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    background: #fff;
+    /* bottom-only shadow */
+    box-shadow: 0 4px 15px 0 rgba(0,0,0,0.25);
+    /* remove borders and radius */
+    border: none;
+    border-radius: 0;
+    /* center content with 15px vertical padding */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* remove external margins/constraints */
+    margin: 0;
+    max-width: none;
+    padding-right: 0;
+    gap: 8px;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 .top-routes-html .vector 
 {
-    
-width: 26px;
-    
-height: 26px;
-    
-flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
 }
 .top-routes-html .element 
 {
-    
-width: calc(100vw - 105px);
-    
-max-width: 275px;
-    
-height: 24px;
-    
-font-family: 'Jura', sans-serif;
-    
-font-weight: 400;
-    
-font-size: 20px;
-    
-text-align: center;
-    
-overflow: hidden;
-    
-text-overflow: ellipsis;
-    
-display: -webkit-box;
-    
--webkit-line-clamp: 1;
-    
--webkit-box-orient: vertical;
-    
-color: #000000;
-    
-letter-spacing: 0;
+    width: calc(100vw - 105px);
+    max-width: 275px;
+    height: 24px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: #000000;
+    letter-spacing: 0;
 }
 /* ... content omitted for brevity during edit ... */
 /* Button styles from index.html */
@@ -144,7 +86,7 @@ letter-spacing: 0;
     border-radius: 10px;
     border: 1px solid;
     border-color: #000000;
-    box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.14);
+    box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.07);
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
     font-family: "Jura", Helvetica, Arial, sans-serif;
@@ -212,7 +154,7 @@ letter-spacing: 0;
     overflow: hidden;
     border: 1px solid;
     border-color: #000000;
-    box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.14);
+    box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.07);
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
     cursor: pointer;
