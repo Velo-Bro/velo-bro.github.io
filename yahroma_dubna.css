@@ -13,7 +13,7 @@
     font-family: 'Jura', sans-serif;
     overflow-x: hidden;
     box-sizing: border-box;
-    margin-top: 60px; /* reduced to match compact header height */
+    margin-top: 80px; /* matched with top_routes.css */
     padding-bottom: 20px; /* required: padding-bottom основной обёртки */
 }
 /* Fixed header unified with top routes */
@@ -27,8 +27,8 @@
     box-shadow: 0 4px 15px 0 rgba(0,0,0,0.25);
     border: none;
     border-radius: 0;
-    padding-top: 8px;  /* reduced to avoid oversized header */
-    padding-bottom: 8px; /* reduced to avoid oversized header */
+    padding-top: 15px;  /* matched with top_routes.css */
+    padding-bottom: 15px; /* matched with top_routes.css */
     display: flex;
     align-items: center;
     justify-content: center;
