@@ -16,7 +16,6 @@
     margin-top: 80px; /* matched with top_routes.css */
     padding-bottom: 20px; /* required: padding-bottom основной обёртки */
 }
-
 /* Fixed header unified with top routes */
 .yahroma-dubna-html .view {
     position: fixed;
@@ -35,13 +34,11 @@
     justify-content: center;
     gap: 8px;
 }
-
 .yahroma-dubna-html .vector {
     width: 26px;
     height: 26px;
     flex-shrink: 0;
 }
-
 .yahroma-dubna-html .element {
     width: calc(100vw - 105px);
     max-width: 275px;
@@ -56,7 +53,6 @@
     -webkit-box-orient: vertical;
     color: #000000;
 }
-
 .yahroma-dubna-html .group {
     width: 26px;
     height: 26px;
@@ -66,7 +62,6 @@
     flex-shrink: 0;
     cursor: pointer;
 }
-
 /* Button styles from top_routes.css */
 .div-wrapper,
 .div-wrapper-2,
@@ -83,7 +78,7 @@
     border-radius: 10px;
     border: 1px solid;
     border-color: #000000;
-    box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.07);
+    box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.14);
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
     font-family: "Jura", Helvetica, Arial, sans-serif;
@@ -92,14 +87,12 @@
     text-decoration: none;
     cursor: pointer;
 }
-
 .div-wrapper:active,
 .div-wrapper-2:active,
 .div-wrapper-3:active,
 .div-wrapper-4:active {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
 }
-
 .div-wrapper:focus,
 .div-wrapper-2:focus,
 .div-wrapper-3:focus,
@@ -107,7 +100,6 @@
     outline: none;
     border-color: #bbb;
 }
-
 /* Specific style for "Все маршруты на карте" button */
 .div-wrapper-4 {
     background-image: url('img/image-14.png');
@@ -116,7 +108,6 @@
     background-repeat: no-repeat;
     position: relative;
 }
-
 .div-wrapper-4::after {
     content: '';
     position: absolute;
@@ -129,13 +120,11 @@
     pointer-events: none;
     z-index: 1;
 }
-
 .div-wrapper-4 > span,
 .div-wrapper-4 .text-wrapper-32 {
     position: relative;
     z-index: 2;
 }
-
 /* Text styles for nav menu buttons */
 .text-wrapper-29,
 .text-wrapper-30,
@@ -143,7 +132,6 @@
 .text-wrapper-32 {
     font-size: 20px;
 }
-
 /* Social media wrapper styles from top_routes.css */
 .logo-telegram-wrapper,
 .logo-dzen-wrapper,
@@ -158,12 +146,11 @@
     overflow: hidden;
     border: 1px solid;
     border-color: #000000;
-    box-shadow: 0px 4px 15px 1px #00000040;
+    box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.14);
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
     cursor: pointer;
 }
-
 .logo-telegram,
 .logo-dzen,
 .logo-youtube {
@@ -172,7 +159,6 @@
     height: 40px;
     object-fit: cover;
 }
-
 /* Popup Navigation Menu Styles */
 .nav-overlay {
     position: fixed;
@@ -188,7 +174,6 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-
 .nav-overlay.active {
     /* display removed; interactivity via pointer-events */
     pointer-events: all;
@@ -196,7 +181,6 @@
     align-items: flex-start;
     justify-content: center;
 }
-
 .nav-popup {
     position: fixed;
     top: 0;
@@ -223,14 +207,12 @@
     transform: translateY(-120%);
     transition: transform 0.35s cubic-bezier(0.7, 0, 0.3, 1), opacity 0.3s;
 }
-
 .nav-popup.active {
     /* display removed; interactivity via pointer-events */
     pointer-events: all;
     opacity: 1;
     transform: translateY(0);
 }
-
 /* Close button positioned absolutely in top-right */
 .nav-close {
     position: absolute;
@@ -248,13 +230,11 @@
     flex-shrink: 0;
     z-index: 1000;
 }
-
 .nav-close img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-
 /* Content container with flex column layout */
 .nav-content {
     display: flex;
@@ -262,7 +242,6 @@
     height: 100%;
     max-height: calc(100vh - 164px);
 }
-
 .nav-links {
     display: flex;
     flex-direction: column;
@@ -273,14 +252,12 @@
     margin-bottom: 20px;
     align-items: center;
 }
-
 .nav-social {
     display: flex;
     gap: 20px;
     justify-content: center;
     margin-bottom: 30px;
 }
-
 /* Media query for mobile screens */
 @media (max-width: 375px) {
     .yahroma-dubna-html .view {
