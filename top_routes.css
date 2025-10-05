@@ -15,7 +15,7 @@
     box-sizing: border-box;
     /* Push content below fixed header */
     margin-top: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 .top-routes-html .view {
     /* Fixed top navigation bar aligned per spec */
