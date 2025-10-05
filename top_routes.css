@@ -13,7 +13,7 @@
     overflow-x: hidden;
     box-sizing: border-box;
     /* Push content below fixed header */
-    margin-top: 60px;
+    margin-top: 80px;
 }
 .top-routes-html .view {
     /* Fixed top navigation bar aligned per spec */
