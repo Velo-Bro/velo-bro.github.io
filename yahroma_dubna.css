@@ -52,9 +52,6 @@
 .attach-wrapper,.send-wrapper{display:flex; align-items:center; justify-content:center; width:46px; height:46px; border:1px solid #E0E0E0; border-radius:10px; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,.06)}
 .attach,.send{width:24px; height:24px; object-fit:contain}
 @media(max-width:375px){.view-8{margin:0 16px}}
-/* Соцкнопки в попапе */
-.logo-telegram-wrapper,.logo-dzen-wrapper,.logo-youtube-wrapper{width:46px; height:46px; display:flex; align-items:center; justify-content:center; background:#ffffff73; border-radius:10px; border:1px solid #000; box-shadow:0 4px 15px 1px rgba(0,0,0,.07); backdrop-filter:blur(2px); -webkit-backdrop-filter:blur(2px); cursor:pointer}
-.logo-telegram,.logo-dzen,.logo-youtube{width:40px; height:40px; object-fit:cover}
 /* Мелкие выравнивания шапки карточки */
 .div{margin:0 20px}
 .div .IMG{width:100%; height:180px; object-fit:cover; border-radius:14px}
@@ -62,8 +59,10 @@
 .div .text-wrapper-3{color:#666; font:400 14px 'Jura',sans-serif}
 .div .text-wrapper-4,.div .text-wrapper-5,.div .text-wrapper-6{font:500 14px 'Jura',sans-serif}
 @media(max-width:375px){.div,.div-2,.div-3{margin:0 16px}}
-
 /** --- НАВИГАЦИОННАЯ ПАНЕЛЬ И МЕНЮ --- */
+/* Соцкнопки в попапе */
+.logo-telegram-wrapper,.logo-dzen-wrapper,.logo-youtube-wrapper{width:46px; height:46px; display:flex; align-items:center; justify-content:center; background:#ffffff73; border-radius:10px; border:1px solid #000; box-shadow:0 4px 15px 1px rgba(0,0,0,.07); backdrop-filter:blur(2px); -webkit-backdrop-filter:blur(2px); cursor:pointer}
+.logo-telegram,.logo-dzen,.logo-youtube{width:40px; height:40px; object-fit:cover}
 /* НЕ ТРОГАТЬ .view (верхняя панель навигации) */
 .yahroma-dubna-html .view{position:fixed; top:0; left:0; width:100vw; z-index:100; background:#fff; box-shadow:0 4px 15px rgba(0,0,0,.25); border:0; border-radius:0; padding:15px 0; display:flex; align-items:center; justify-content:center; gap:8px}
 .yahroma-dubna-html .vector{width:26px; height:26px}
