@@ -1,386 +1,429 @@
-/* yahroma_dubna.css — обновлено: стили навигации и кнопок скопированы из top_routes.css, уникальные стили страницы сохранены */
-
-/* Базовый корневой контейнер страницы */
 .yahroma-dubna-html {
-  /* Цвет фона документа */
+
   background-color: #ffffff;
-  /* Полная ширина равна ширине окна */
+
   width: 100vw;
-  /* Ограничение максимальной ширины под мобильный макет */
+
   max-width: 375px;
-  /* Отступ сверху для фиксированной шапки, центрирование по горизонтали, без нижнего отступа */
+
   margin: 80px auto 0;
-  /* Минимальная высота равна высоте окна, чтобы фон тянулся вниз */
+
   min-height: 100vh;
-  /* Флекс-контейнер для вертикальной верстки секций */
+
   display: flex;
-  /* Расположение детей в колонку */
+
   flex-direction: column;
-  /* Вертикальный промежуток между секциями */
+
   gap: 20px;
-  /* Базовое семейство шрифта */
+
   font-family: 'Jura', sans-serif;
-  /* Включаем border-box для предсказуемых размеров */
+
   box-sizing: border-box;
-  /* Нижний внутренний отступ, чтобы контент не упирался в край */
+
   padding-bottom: 24px;
 }
 
 /* ВЕРХНЯЯ ПАНЕЛЬ .view — как в top_routes.css */
 .yahroma-dubna-html .view {
-  /* Фиксируем панель относительно окна */
+
   position: fixed;
-  /* Прижимаем к верхнему краю */
+
   top: 0;
-  /* Прижимаем к левому краю */
+
   left: 0;
-  /* Полная ширина на всю вьюпорт-ширину */
+
   width: 100vw;
-  /* Слой поверх контента */
+
   z-index: 100;
-  /* Белый фон шапки */
+
   background: #fff;
-  /* Тень под шапкой для отделения от контента */
+
   box-shadow: 0 4px 15px 0 rgba(0,0,0,0.25);
-  /* Без рамки */
+
   border: none;
-  /* Без скругления краев */
+
   border-radius: 0;
-  /* Внутренний отступ сверху */
+
   padding-top: 15px;
-  /* Внутренний отступ снизу */
+
   padding-bottom: 15px;
-  /* Флекс для центрирования содержимого */
+
   display: flex;
-  /* Выравнивание по вертикали */
+
   align-items: center;
-  /* Выравнивание по горизонтали */
+
   justify-content: center;
-  /* Сбрасываем внешние отступы */
+
   margin: 0;
-  /* Убираем ограничение по максимальной ширине */
+
   max-width: none;
-  /* Без правого внутреннего отступа */
+
   padding-right: 0;
-  /* Промежуток между элементами в шапке */
+
   gap: 8px;
-  /* Учет границ и паддингов в размерах */
+
   box-sizing: border-box;
-  /* Скрываем горизонтальную прокрутку внутри */
+
   overflow-x: hidden;
 }
+.yahroma-dubna-html .vector { width: 26px; height: 26px; flex-shrink: 0; }
 
-/* Иконка в шапке (например, назад) */
-.yahroma-dubna-html .vector { 
-  /* Фиксированная ширина и высота иконки */
-  width: 26px; 
-  height: 26px; 
-  /* Запрещаем сжатие во флексе */
-  flex-shrink: 0; 
-}
 
-/* Заголовок/текст в шапке */
+
+
+
+
+
+
+
+
 .yahroma-dubna-html .element {
-  /* Ширина с учетом боковых иконок и интервалов */
+
   width: calc(100vw - 105px);
-  /* Максимальная ширина заголовка */
+
   max-width: 275px;
-  /* Фиксированная высота строки */
+
   height: 24px;
-  /* Компактная запись шрифта: вес, размер, семейство */
+
   font: 400 20px 'Jura', sans-serif;
-  /* Центрируем текст */
+
   text-align: center;
-  /* Скрываем переполнение */
+
   overflow: hidden;
-  /* Многоточие при переполнении строки */
+
   text-overflow: ellipsis;
-  /* Вебкит-контейнер для обрезки по строкам */
+
   display: -webkit-box;
-  /* Оставляем одну строку */
+
   -webkit-line-clamp: 1;
-  /* Вертикальная ориентация виртуального бокса */
+
   -webkit-box-orient: vertical;
-  /* Цвет текста черный */
+
   color: #000;
-  /* Нормальный кернинг */
+
   letter-spacing: 0;
-  /* Нормальная высота строки */
+
   line-height: normal;
-  /* Учет границ в расчетах */
+
   box-sizing: border-box;
 }
+.yahroma-dubna-html .group { width: 26px; height: 26px; display: flex; flex-direction: column; gap: 11.1px; cursor: pointer; }
 
-/* Группа (бургер-меню) справа в шапке */
-.yahroma-dubna-html .group { 
-  /* Фиксированные размеры кнопки */
-  width: 26px; 
-  height: 26px; 
-  /* Вертикальная раскладка линий бургера */
-  display: flex; 
-  flex-direction: column; 
-  /* Интервал между линиями */
-  gap: 11.1px; 
-  /* Курсор «рука» при наведении */
-  cursor: pointer; 
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Обертки для равных полей по краям — уникальные */
-.container { 
-  /* Горизонтальные внешние отступы блока */
-  margin: 0 20px; 
-}
+.container { margin: 0 20px; }
+@media (max-width: 375px) { .container { margin: 0 16px; } }
 
-/* Медиазапрос: уменьшаем поля на узких экранах */
-@media (max-width: 375px) { 
-  .container { 
-    /* Уменьшенные боковые отступы */
-    margin: 0 16px; 
-  } 
-}
+
+
+
+
+
+
+
+
+
 
 /* Галерея — уникальные стили */
-.view-2 { 
-  /* Боковые внешние отступы */
-  margin: 0 20px; 
-  /* Горизонтальная компоновка элементов */
-  display: flex; 
-  /* Промежуток между картинками */
-  gap: 8px; 
-  /* Светлая рамка вокруг галереи */
-  border: 1px solid #E0E0E0; 
-  /* Скругленные углы контейнера */
-  border-radius: 14px; 
-  /* Обрезаем содержимое по границам контейнера */
-  overflow: hidden; 
-}
+.view-2 { margin: 0 20px; display: flex; gap: 8px; border: 1px solid #E0E0E0; border-radius: 14px; overflow: hidden; }
+.view-2 .IMG-2 { flex: 2; display: block; width: 100%; height: 180px; object-fit: cover; }
+.view-2 .vlcsnap, .view-2 .vlcsnap-2 { flex: 1; display: block; width: 100%; height: 86px; object-fit: cover; }
+.view-2 .vlcsnap { border-bottom: 8px solid transparent; }
+@media (max-width: 375px) { .view-2 { margin: 0 16px; } }
 
-/* Главное (большое) изображение галереи */
-.view-2 .IMG-2 { 
-  /* Берёт два флекс-деления ширины */
-  flex: 2; 
-  /* Блочный элемент */
-  display: block; 
-  /* Заполняет ширину родителя */
-  width: 100%; 
-  /* Фиксированная высота для сетки */
-  height: 180px; 
-  /* Обрезаем без искажений, заполняя контейнер */
-  object-fit: cover; 
-}
 
-/* Малые превью справа (два ряда) */
-.view-2 .vlcsnap, .view-2 .vlcsnap-2 { 
-  /* Каждое превью занимает одну долю */
-  flex: 1; 
-  /* Блочный элемент */
-  display: block; 
-  /* На всю ширину своей колонки */
-  width: 100%; 
-  /* Низкая высота, чтобы два превью помещались */
-  height: 86px; 
-  /* Обрезаем картинку по контейнеру */
-  object-fit: cover; 
-}
 
-/* Нижнее поле между двумя превью (верхним и нижним) */
-.view-2 .vlcsnap { 
-  /* Прозрачная нижняя граница как отступ */
-  border-bottom: 8px solid transparent; 
-}
 
-/* Медиазапрос: уменьшаем боковые отступы галереи */
-@media (max-width: 375px) { 
-  .view-2 { 
-    margin: 0 16px; 
-  } 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Блок кнопок — .div-wrapper* как в top_routes.css */
-.button-block { 
-  /* Боковые отступы блока */
-  margin: 0 20px; 
-  /* Светло-серый фон */
-  background: #F5F5F5; 
-  /* Скругление углов блока */
-  border-radius: 14px; 
-  /* Внутренние отступы */
-  padding: 16px; 
-  /* Вертикальная компоновка кнопок */
-  display: flex; 
-  flex-direction: column; 
-  /* Центрируем кнопки по горизонтали */
-  align-items: center; 
-  /* Интервал между кнопками */
-  gap: 12px; 
-}
+.button-block { margin: 0 20px; background: #F5F5F5; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
 
-/* Кнопки-плитки действий */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .div-wrapper,
 .div-wrapper-2,
 .div-wrapper-3,
 .div-wrapper-4 {
-  /* Фиксированная ширина плитки */
+
   width: 284px;
-  /* Разрешаем сжиматься при нехватке места */
+
   min-width: 0;
-  /* Не скрываем содержимое (для теней) */
+
   overflow: visible;
-  /* Фиксированная высота */
+
   height: 46px;
-  /* Флекс-центрирование по вертикали */
+
   display: flex;
   align-items: center;
-  /* Центрирование по горизонтали */
+
   justify-content: center;
-  /* Полупрозрачный белый фон (glass) */
+
   background-color: #ffffff73;
-  /* Скругленные углы */
+
   border-radius: 10px;
-  /* Тонкая рамка */
+
   border: 1px solid;
   border-color: #000000;
-  /* Мягкая тень для объема */
+
   box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.07);
-  /* Эффект размытия/яркости фона позади */
+
   backdrop-filter: blur(2px) brightness(100%);
-  /* Вебкит-префикс для поддержки эффекта в Safari */
+
   -webkit-backdrop-filter: blur(2px) brightness(100%);
-  /* Единый шрифт для кнопок */
+
   font-family: "Jura", Helvetica, Arial, sans-serif;
-  /* Обычный вес текста */
+
   font-weight: 400;
-  /* Цвет текста */
+
   color: #000000;
-  /* Без подчеркивания ссылок */
+
   text-decoration: none;
-  /* Курсор «рука» при наведении */
+
   cursor: pointer;
 }
 
-/* Состояние :active — уменьшаем тень как эффект нажатия */
+
 .div-wrapper:active,
 .div-wrapper-2:active,
 .div-wrapper-3:active,
-.div-wrapper-4:active { 
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.25); 
-}
+.div-wrapper-4:active { box-shadow: 0 2px 4px 0 rgba(0,0,0,.25); }
 
-/* Состояние :focus — убираем стандартный outline и смягчаем рамку */
+
+
+
 .div-wrapper:focus,
 .div-wrapper-2:focus,
 .div-wrapper-3:focus,
-.div-wrapper-4:focus { 
-  outline: none; 
-  border-color: #bbb; 
-}
+.div-wrapper-4:focus { outline: none; border-color: #bbb; }
+/* спец-кнопка карта */
+.div-wrapper-4 { background-image: url('img/image-14.png'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; }
+.div-wrapper-4::after { content: ''; position: absolute; inset: 0; background: rgba(255, 255, 255, 0.3); border-radius: 10px; pointer-events: none; z-index: 1; }
 
-/* спец-кнопка карта — фоновое изображение и вуаль */
-.div-wrapper-4 { 
-  /* Фоновая картинка */
-  background-image: url('img/image-14.png'); 
-  /* Растягиваем фон, обрезая лишнее */
-  background-size: cover; 
-  /* Центрируем фон */
-  background-position: center; 
-  /* Не повторяем фон */
-  background-repeat: no-repeat; 
-  /* Нужен контекст позиционирования для псевдоэлемента */
-  position: relative; 
-}
 
-/* Полупрозрачная вуаль поверх фонового изображения */
-.div-wrapper-4::after { 
-  /* Пустое содержимое псевдоэлемента */
-  content: ''; 
-  /* Абсолютное позиционирование на всю плитку */
-  position: absolute; 
-  /* Растягиваем на все стороны */
-  inset: 0; 
-  /* Полупрозрачный белый оттенок для читаемости текста */
-  background: rgba(255, 255, 255, 0.3); 
-  /* Совпадающее скругление углов */
-  border-radius: 10px; 
-  /* Не перехватываем события */
-  pointer-events: none; 
-  /* Размещаем над фоном, под текстом */
-  z-index: 1; 
-}
 
-/* Текст и содержимое на спец-кнопке поверх вуали */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .div-wrapper-4 > span,
-.div-wrapper-4 .text-wrapper-7 { 
-  position: relative; 
-  z-index: 2; 
-}
+.div-wrapper-4 .text-wrapper-7 { position: relative; z-index: 2; }
+@media (max-width: 375px) { .button-block { margin: 0 16px; } }
 
-/* Медиазапрос: корректируем поля блока кнопок */
-@media (max-width: 375px) { 
-  .button-block { 
-    margin: 0 16px; 
-  } 
-}
+
+
+
+
+
+
+
+
 
 /* Характеристики — уникальные стили */
-.view-4 { 
-  /* Боковые внешние отступы */
-  margin: 0 20px; 
-  /* Светлый фон карточки характеристик */
-  background: #F9F9F9; 
-  /* Скругленные углы */
-  border-radius: 14px; 
-  /* Внутренние отступы */
-  padding: 20px; 
-  /* Сетка для пар значений */
-  display: grid; 
-  /* Две равные колонки */
-  grid-template-columns: 1fr 1fr; 
-  /* Межстрочные и межколоночные отступы */
-  gap: 16px 24px; 
-  /* Выравнивание элементов по верхнему краю */
-  align-items: start; 
+.view-4 { margin: 0 20px; background: #F9F9F9; border-radius: 14px; padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 24px; align-items: start; }
+.view-4 .text-wrapper-10,.view-4 .text-wrapper-12,.view-4 .text-wrapper-14,.view-4 .text-wrapper-16,.view-4 .text-wrapper-19 { font: 400 15px 'Jura', sans-serif; color: #666; line-height: 1.2; }
+.view-4 .text-wrapper-11,.view-4 .text-wrapper-13,.view-4 .text-wrapper-15,.view-4 .text-wrapper-17,.view-4 .text-wrapper-18,.view-4 .text-wrapper-20 { font: 500 17px 'Jura', sans-serif; color: #000; line-height: 1.2; }
+.view-4 .vector-3,.view-4 .vector-4 { width: 16px; height: 16px; align-self: center; }
+@media (max-width: 375px) { .view-4 { margin: 0 16px; gap: 12px 16px; padding: 16px; } }
+/* Описание и Как добраться — уникальные */
+.view-5,.view-6 { margin: 0 20px; }
+.view-5 .text-wrapper-21,.view-6 .text-wrapper-21 { font: 700 20px 'Jura', sans-serif; color: #000; margin-bottom: 12px; line-height: 1.3; }
+.view-5 .p,.view-6 .element { font: 400 16px 'Jura', sans-serif; color: #000; line-height: 1.6; margin: 0 0 16px; }
+@media (max-width: 375px) { .view-5,.view-6 { margin: 0 16px; } }
+/* Полезные ссылки — уникальные */
+.view-7 { margin: 0 20px; }
+.view-7 .text-wrapper-21 { font: 700 20px 'Jura', sans-serif; margin-bottom: 12px; }
+.view-7 a { display: inline-flex; align-items: center; gap: 8px; color: #007AFF; text-decoration: none; font: 400 16px 'Jura', sans-serif; margin-bottom: 8px; }
+.view-7 a::after { content: '→'; font-size: 14px; transition: transform .2s ease; }
+.view-7 a:hover { color: #0056CC; text-decoration: underline; }
+.view-7 a:hover::after { transform: translateX(2px); }
+@media (max-width: 375px) { .view-7 { margin: 0 16px; } }
+/* Комментарии — уникальные */
+.view-8 { margin: 0 20px; }
+.view-8 .text-wrapper-21 { font: 700 20px 'Jura', sans-serif; margin-bottom: 12px; }
+.view-9,.view-10 { background: #F6F6F8; border: 1px solid #D0D0D0; border-radius: 12px; padding: 12px 14px; color: #000; }
+.view-9 .text-wrapper-24,.view-10 .text-wrapper-25 { color: #BDBDBD; }
+.attach-wrapper,.send-wrapper { display: flex; align-items: center; justify-content: center; width: 46px; height: 46px; border: 1px solid #E0E0E0; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.attach,.send { width: 24px; height: 24px; object-fit: contain; }
+@media (max-width: 375px) { .view-8 { margin: 0 16px; } }
+/* Соцкнопки — как в top_routes.css */
+.logo-telegram-wrapper,
+.logo-dzen-wrapper,
+.logo-youtube-wrapper {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff73;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: 0px 4px 15px 1px #00000040;
+  backdrop-filter: blur(2px) brightness(100%);
+  -webkit-backdrop-filter: blur(2px) brightness(100%);
+  cursor: pointer;
 }
-
-/* Подписи (лейблы) — более светлые и меньше */
-.view-4 .text-wrapper-10,
-.view-4 .text-wrapper-12,
-.view-4 .text-wrapper-14,
-.view-4 .text-wrapper-16,
-.view-4 .text-wrapper-19 { 
-  /* Вес и размер для подписей */
-  font: 400 15px 'Jura', sans-serif; 
-  /* Серый цвет текста */
-  color: #666; 
-  /* Компактная межстрочная высота */
-  line-height: 1.2; 
+.logo-telegram,
+.logo-dzen,
+.logo-youtube { aspect-ratio: 1; width: 40px; height: 40px; object-fit: cover; }
+/* Попап навигации — как в top_routes.css */
+.nav-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: transparent;
+  z-index: 998;
+  display: block;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-
-/* Значения — чуть крупнее и темнее */
-.view-4 .text-wrapper-11,
-.view-4 .text-wrapper-13,
-.view-4 .text-wrapper-15,
-.view-4 .text-wrapper-17,
-.view-4 .text-wrapper-18,
-.view-4 .text-wrapper-20 { 
-  /* Полужирный, больше размер */
-  font: 500 17px 'Jura', sans-serif; 
-  /* Черный цвет текста */
-  color: #000; 
-  /* Компактная межстрочная высота */
-  line-height: 1.2; 
+.nav-overlay.active { pointer-events: all; opacity: 1; align-items: flex-start; justify-content: center; }
+.nav-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; max-width: 100vw;
+  height: auto; max-height: calc(100vh - 40px);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0 0 24px 24px;
+  border: none;
+  box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 999;
+  padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  display: block;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-120%);
+  transition: transform 0.35s cubic-bezier(0.7, 0, 0.3, 1), opacity 0.3s;
 }
-
-/* Размер иконок в блоке характеристик */
-.view-4 .vector-3,
-.view-4 .vector-4 { 
-  /* Единый размер иконок */
-  width: 16px; 
-  height: 16px; 
-  /* Выравнивание по центру по оси */
-  align-self: center; 
+.nav-popup.active { pointer-events: all; opacity: 1; transform: translateY(0); }
+.nav-close {
+  position: absolute; top: 24px; right: 24px;
+  width: 26px; height: 26px; background: none; border: none; cursor: pointer; padding: 0;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0; z-index: 1000;
 }
-
-/* Медиазапрос: уменьшаем отступы и расстояния в блоке характеристик */
-@media (max-width: 375px) { 
-  .view-4 { 
-    margin: 0 16
+.nav-close img { width: 100%; height: 100%; object-fit: contain; }
+.nav-content { display: flex; flex-direction: column; height: 100%; max-height: calc(100vh - 164px); }
+.nav-links { display: flex; flex-direction: column; gap: 20px; flex-grow: 1; overflow: visible; padding-right: 5px; margin-bottom: 20px; align-items: center; }
+.nav-links a { font-size: 20px; }
+.nav-social { display: flex; gap: 20px; justify-content: center; margin-bottom: 30px; }
+/* Медиа-запросы для попапа */
+@media (max-width: 375px) {
+  .yahroma-dubna-html .view { width: calc(100vw - 0px); max-width: 100vw; }
+  .yahroma-dubna-html .element { width: calc(100vw - 105px); max-width: 100vw; }
+  .nav-popup { max-height: calc(100vh - 40px); padding-top: 60px; padding-bottom: 0; }
+  .nav-content { max-height: calc(100vh - 164px); }
+}
+/* Шапка карточки — уникальные */
+.div { margin: 0 20px; }
+.div .IMG { width: 100%; height: 180px; object-fit: cover; border-radius: 14px; }
+.div .text-wrapper-2 { font: 600 20px 'Jura', sans-serif; margin-top: 8px; }
+.div .text-wrapper-3 { color: #666; font: 400 14px 'Jura', sans-serif; }
+.div .text-wrapper-4,.div .text-wrapper-5,.div .text-wrapper-6 { font: 500 14px 'Jura', sans-serif; }
+@media (max-width: 375px) { .div,.div-2,.div-3 { margin: 0 16px; } }
