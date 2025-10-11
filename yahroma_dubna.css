@@ -8,7 +8,9 @@
   flex-direction: column; 
   gap: 20px; font-family: 'Jura', sans-serif; 
   box-sizing: border-box; 
-  padding-bottom: 24px; }
+  padding-bottom: 24px;
+  padding-top: 56px;
+}
 
 /* ВЕРХНЯЯ ПАНЕЛЬ .view — как в top_routes.css */
 .yahroma-dubna-html .view {                    /* Фиксированная верхняя навигационная панель */
