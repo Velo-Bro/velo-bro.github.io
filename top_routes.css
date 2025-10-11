@@ -106,72 +106,53 @@
     line-height: normal;       /* Обычная высота строки */
 }
 
-.top-routes-html .text-name-of-route {
+/* Оформление текста в карточках маршрутов */
+.top-routes-html .route-card-text {    /* Общие свойства */ 
+    font-family: 'Jura', sans-serif;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    position: absolute;
+}
+
+.top-routes-html .text-name-of-route { /* Индивидуальные параметры */
     top: 10px;
     left: 33px;
     right: 10px;
     width: auto;
     max-width: calc(100% - 43px);
-    font-family: 'Jura', sans-serif;
     font-weight: 700;
-    position: absolute;
-    color: #000000;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
 }
-.top-routes-html .text-author {
+
+.top-routes-html .text-author {       /* Индивидуальные параметры */
     right: 10px;
     bottom: 10px;
-    font-family: 'Jura', sans-serif;
     font-weight: 400;
     text-align: right;
-    white-space: nowrap;
-    position: absolute;
-    color: #000000;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
 }
-.top-routes-html .text-distance {
-    position: absolute;
+
+.top-routes-html .text-distance {     /* Индивидуальные параметры */
     top: 106px;
     left: 33px;
-    font-family: 'Jura', sans-serif;
     font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
 }
-.top-routes-html .text-difficulty {
+
+.top-routes-html .text-difficulty {   /* Индивидуальные параметры */
     top: 77px;
     left: 33px;
-    font-family: 'Jura', sans-serif;
     font-weight: 400;
-    white-space: nowrap;
-    position: absolute;
-    color: #000000;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
 }
-.top-routes-html .text-likes {
+
+.top-routes-html .text-likes {        /* Индивидуальные параметры */
     top: 48px;
     left: 33px;
-    font-family: 'Jura', sans-serif;
     font-weight: 400;
-    white-space: nowrap;
-    position: absolute;
-    color: #000000;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
 }
+
 .top-routes-html .image {
     position: absolute;
     right: 81px;
