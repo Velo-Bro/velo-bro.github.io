@@ -163,20 +163,6 @@
     object-fit: cover;         /* Картинка аватарки заполняет весь блок, не растягивается и не искажается — "отрезается" лишнее, чтобы сохранить композицию */
 }
 
-.top-routes-html .vector-2 {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 6px;
-    height: 7px;
-}
-.top-routes-html .vector-3 {
-    position: absolute;
-    top: 3px;
-    left: 15px;
-    width: 3px;
-    height: 4px;
-}
 .top-routes-html .distance {
     position: absolute;
     top: 106px;
