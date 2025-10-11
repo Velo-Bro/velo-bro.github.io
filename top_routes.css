@@ -151,27 +151,15 @@
     object-fit: cover;         /* Картинка аватарки заполняет весь блок, не растягивается и не искажается — "отрезается" лишнее, чтобы сохранить композицию */
 }
 
-.top-routes-html .distance {
+.top-routes-html .route-icon { /* Общие параметры иконок в карточках маршрутов */
     position: absolute;
-    top: 106px;
-    left: 10px;
     width: 20px;
     height: 20px;
 }
-.top-routes-html .difficulty {
-    position: absolute;
-    top: 77px;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-}
-.top-routes-html .favorites {
-    position: absolute;
-    top: 48px;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-}
+.top-routes-html .distance   { top: 106px; left: 10px; } /* Индивидуальные параметры иконок в карточках маршрутов */
+.top-routes-html .difficulty { top: 77px; left: 10px; }  /* Индивидуальные параметры иконок в карточках маршрутов */
+.top-routes-html .favorites  { top: 48px; left: 10px; }  /* Индивидуальные параметры иконок в карточках маршрутов */
+
 
 /* Button styles from index.html */
 .div-wrapper,
