@@ -190,23 +190,13 @@
     -webkit-backdrop-filter: blur(2px) brightness(100%);
     font-family: "Jura", Helvetica, Arial, sans-serif;
     font-weight: 400;
+    font-size: 20px;
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-.div-wrapper:active,
-.div-wrapper-2:active,
-.div-wrapper-3:active,
-.div-wrapper-4:active {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
-}
-.div-wrapper:focus,
-.div-wrapper-2:focus,
-.div-wrapper-3:focus,
-.div-wrapper-4:focus {
-    outline: none;
-    border-color: #bbb;
-}
+.bttn:active { box-shadow: 0 2px 4px 0 rgba(0,0,0,.25); }
+.bttn:focus { outline: none; border-color: #bbb; }
 
 .route-btn--map {
     background-image: url('img/image-14.png');
@@ -228,15 +218,6 @@
     position: relative;
     z-index: 2;
 }
-
-/* Text styles for nav menu buttons - УБЕРЁМ, СКОРЕЕ ВСЕГО */
-.text-wrapper-4,
-.text-wrapper-5,
-.text-wrapper-6,
-.text-wrapper-7 {
-    font-size: 20px;
-}
-
 
 /* Social media wrapper styles from index.html */
 .logo-telegram-wrapper,
