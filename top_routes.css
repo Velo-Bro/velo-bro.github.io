@@ -173,11 +173,8 @@
 .top-routes-html .favorites  { top: 48px; left: 10px; }  /* Индивидуальные параметры иконок в карточках маршрутов */
 
 
-/* Button styles from index.html */
-.div-wrapper,
-.div-wrapper-2,
-.div-wrapper-3,
-.div-wrapper-4 {
+/* Стили кнопок во всплывающем меню */
+.bttn {
     width: 284px;
     min-width: 0;
     overflow: visible;
@@ -185,16 +182,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff73;
+    background-color: rgba(255,255,255,0.45);
     border-radius: 10px;
-    border: 1px solid;
-    border-color: #000000;
-    box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.07);
+    border: 1px solid #000;
+    box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.25);
     backdrop-filter: blur(2px) brightness(100%);
     -webkit-backdrop-filter: blur(2px) brightness(100%);
     font-family: "Jura", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    color: #000000;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
 }
