@@ -223,14 +223,7 @@
     width: 20px;
     height: 20px;
 }
-.top-routes-html .IMG-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 135px;
-    object-fit: cover;
-}
+
 /* Button styles from index.html */
 .div-wrapper,
 .div-wrapper-2,
