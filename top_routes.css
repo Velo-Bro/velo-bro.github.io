@@ -67,46 +67,50 @@
     flex-shrink: 0;              /* Элемент сохраняет свои размеры в flex-контейнере, не будет уменьшаться при переполнении */
     cursor: pointer;             /* Курсор меняется на "руку", когда пользователь наводит мышь (для интерактивности) */
 }
+
 .top-routes-html .img {
-    width: 26px;
-    height: 1.24px;
+    width: 26px;               /* Фиксированная ширина для изображения (например, полоска бургер-меню) */
+    height: 1.24px;            /* Минимальная высота, часто используется для "линии" в иконке бургер-меню */
 }
+
 .top-routes-html .div {
-    height: 135px;
-    width: calc(100vw - 32px);
-    max-width: 343px;
-    align-self: center;
-    position: relative;
-    background-color: #ffffff73;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid;
-    border-color: #000000;
-    box-shadow: 0px 4px 15px 1px #00000040;
-    backdrop-filter: blur(2px) brightness(100%);
-    -webkit-backdrop-filter: blur(2px) brightness(100%);
-    box-sizing: border-box;
+    height: 135px;             /* Высота карточки маршрута */
+    width: calc(100vw - 32px); /* Ширина: весь экран минус отступы */
+    max-width: 343px;          /* Ограничение максимальной ширины для адаптива */
+    align-self: center;        /* Выравнивание по центру во flex-контейнере */
+    position: relative;        /* Позволяет размещать элементы внутри абсолютно */
+    background-color: #ffffff73; /* Полупрозрачный белый фон */
+    border-radius: 10px;       /* Скругление краёв карточки */
+    overflow: hidden;          /* Обрезает содержимое, выходящее за пределы */
+    border: 1px solid;         /* Тонкая рамка по умолчанию (цвет задается ниже) */
+    border-color: #000000;     /* Чёрная рамка */
+    box-shadow: 0px 4px 15px 1px #00000040; /* Мягкая белая тень для поднятия карточки над фоном */
+    backdrop-filter: blur(2px) brightness(100%); /* Размытие и яркость заднего фона внутри карточки */
+    -webkit-backdrop-filter: blur(2px) brightness(100%); /* То же для Safari */
+    box-sizing: border-box;    /* Размеры карточки включают отступы и рамки */
 }
+
 .top-routes-html .IMG {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 135px;
-    object-fit: cover;
+    position: absolute;        /* Разблокирует свободное позиционирование внутри .div */
+    top: 0;                    /* Прижимает изображение к верхнему краю карточки */
+    left: 0;                   /* Прижимает изображение к левому краю карточки */
+    width: 100%;               /* Растягивает изображение на всю ширину карточки */
+    height: 135px;             /* На всю высоту карточки */
+    object-fit: cover;         /* Обрезает изображение для заполнения блока без искажения */
 }
+
 .top-routes-html .text-wrapper {
-    top: 10px;
-    left: 10px;
-    width: 14px;
-    font-family: 'Jura', sans-serif;
-    font-weight: 700;
-    position: absolute;
-    color: #000000;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
+    top: 10px; left: 10px;     /* Позиционирование в левом верхнем углу карточки (например, номер маршрута) ВОЗМОЖНО ТУТ ПРОБЛЕМА*/
+    width: 14px;               /* Ширина элемента */
+    font-family: 'Jura', sans-serif; /* Шрифт */
+    font-weight: 700;          /* Жирный текст */
+    position: absolute;        /* Абсолютное позиционирование внутри .div */
+    color: #000000;            /* Чёрный цвет текста */
+    font-size: 16px;           /* Размер текста */
+    letter-spacing: 0;         /* Без изменения межбуквенного расстояния */
+    line-height: normal;       /* Обычная высота строки */
 }
+
 .top-routes-html .text-wrapper-2 {
     top: 10px;
     left: 33px;
