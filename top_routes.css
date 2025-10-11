@@ -16,8 +16,7 @@
     margin-top: 80px;               /* Отступ сверху — всю страницу сдвигает ниже фиксированной навигационной панели, чтобы контент был виден. */
     padding-bottom: 20px;           /* Отступ снизу — создаёт "воздух" между низом страницы и последним элементом. */
 }
-.top-routes-html .view {
-    /* Фиксированная верхняя навигационная панель согласно спецификации */
+.top-routes-html .view {                    /* Фиксированная верхняя навигационная панель */
     position: fixed;                        /* Панель фиксируется в верхней части экрана вне зависимости от прокрутки. Всегда остается видимой. */
     top: 0;                                 /* Ориентация: верхний край панели примыкает к верхнему краю окна. */
     left: 0;                                /* Ориентация: левый край панели примыкает к левому краю окна. */
@@ -70,111 +69,7 @@
     cursor: pointer;             /* Курсор меняется на "руку", когда пользователь наводит мышь (для интерактивности) */
 }
 
-.top-routes-html .div {
-    height: 135px;             /* Высота карточки маршрута */
-    width: calc(100vw - 32px); /* Ширина: весь экран минус отступы */
-    max-width: 343px;          /* Ограничение максимальной ширины для адаптива */
-    align-self: center;        /* Выравнивание по центру во flex-контейнере */
-    position: relative;        /* Позволяет размещать элементы внутри абсолютно */
-    background-color: #ffffff73; /* Полупрозрачный белый фон */
-    border-radius: 10px;       /* Скругление краёв карточки */
-    overflow: hidden;          /* Обрезает содержимое, выходящее за пределы */
-    border: 1px solid;         /* Тонкая рамка по умолчанию (цвет задается ниже) */
-    border-color: #000000;     /* Чёрная рамка */
-    box-shadow: 0px 4px 15px 1px #00000040; /* Мягкая белая тень для поднятия карточки над фоном */
-    backdrop-filter: blur(2px) brightness(100%); /* Размытие и яркость заднего фона внутри карточки */
-    -webkit-backdrop-filter: blur(2px) brightness(100%); /* То же для Safari */
-    box-sizing: border-box;    /* Размеры карточки включают отступы и рамки */
-}
-
-.top-routes-html .IMG {
-    position: absolute;        /* Разблокирует свободное позиционирование внутри .div */
-    top: 0;                    /* Прижимает изображение к верхнему краю карточки */
-    left: 0;                   /* Прижимает изображение к левому краю карточки */
-    width: 100%;               /* Растягивает изображение на всю ширину карточки */
-    height: 135px;             /* На всю высоту карточки */
-    object-fit: cover;         /* Обрезает изображение для заполнения блока без искажения */
-}
-
-/* Оформление текста в карточках маршрутов */
-.top-routes-html .route-card-text {    /* Общие свойства */ 
-    font-family: 'Jura', sans-serif;
-    font-size: 16px;
-    color: #000;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-    position: absolute;
-}
-
-.top-routes-html .text-num-of-route {
-    top: 10px; left: 10px;     /* Позиционирование в левом верхнем углу карточки (например, номер маршрута) ВОЗМОЖНО ТУТ ПРОБЛЕМА*/
-    width: 14px;               /* Ширина элемента */
-    font-family: 'Jura', sans-serif; /* Шрифт */
-    font-weight: 700;          /* Жирный текст */
-    position: absolute;        /* Абсолютное позиционирование внутри .div */
-    color: #000000;            /* Чёрный цвет текста */
-    font-size: 16px;           /* Размер текста */
-    letter-spacing: 0;         /* Без изменения межбуквенного расстояния */
-    line-height: normal;       /* Обычная высота строки */
-}
-
-.top-routes-html .text-name-of-route { /* Индивидуальные параметры */
-    top: 10px;
-    left: 33px;
-    right: 10px;
-    width: auto;
-    max-width: calc(100% - 43px);
-    font-weight: 700;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.top-routes-html .text-author {       /* Индивидуальные параметры */
-    right: 10px;
-    bottom: 10px;
-    font-weight: 400;
-    text-align: right;
-}
-
-.top-routes-html .text-distance {     /* Индивидуальные параметры */
-    top: 106px;
-    left: 33px;
-    font-weight: 400;
-}
-
-.top-routes-html .text-difficulty {   /* Индивидуальные параметры */
-    top: 77px;
-    left: 33px;
-    font-weight: 400;
-}
-
-.top-routes-html .text-likes {        /* Индивидуальные параметры */
-    top: 48px;
-    left: 33px;
-    font-weight: 400;
-}
-
-.top-routes-html .avatar-of-author {  /* Класс для аватарки автора внутри карточки маршрута, применяется только к элементу внутри .top-routes-html */
-    position: absolute;        /* Позволяет разместить аватарку точно в определённом месте внутри родительской карточки (карточка должна иметь position: relative) */
-    right: 81px;               /* Отступ аватарки от правого края карточки на 81px; отвечает за горизонтальное положение аватарки */
-    bottom: 9px;               /* Отступ аватарки от нижнего края карточки на 9px; отвечает за вертикальное положение */
-    width: 20px;               /* Фиксированная ширина аватарки — миниатюрная иконка */
-    height: 20px;              /* Фиксированная высота аватарки для квадратного изображения */
-    aspect-ratio: 1;           /* Пропорция изображения — строго квадратная (ширина и высота одинаковы) */
-    object-fit: cover;         /* Картинка аватарки заполняет весь блок, не растягивается и не искажается — "отрезается" лишнее, чтобы сохранить композицию */
-}
-
-.top-routes-html .route-icon { /* Общие параметры иконок в карточках маршрутов */
-    position: absolute;
-    width: 20px;
-    height: 20px;
-}
-.top-routes-html .distance   { top: 106px; left: 10px; } /* Индивидуальные параметры иконок в карточках маршрутов */
-.top-routes-html .difficulty { top: 77px; left: 10px; }  /* Индивидуальные параметры иконок в карточках маршрутов */
-.top-routes-html .favorites  { top: 48px; left: 10px; }  /* Индивидуальные параметры иконок в карточках маршрутов */
-
-                                                /* Стили кнопок во всплывающем меню */
+  /* Стили кнопок во всплывающем меню */
 .bttn {
     width: 284px;
     min-width: 0;
@@ -335,6 +230,111 @@
     margin-bottom: 30px;
 }
 
+.top-routes-html .div {
+    height: 135px;             /* Высота карточки маршрута */
+    width: calc(100vw - 32px); /* Ширина: весь экран минус отступы */
+    max-width: 343px;          /* Ограничение максимальной ширины для адаптива */
+    align-self: center;        /* Выравнивание по центру во flex-контейнере */
+    position: relative;        /* Позволяет размещать элементы внутри абсолютно */
+    background-color: #ffffff73; /* Полупрозрачный белый фон */
+    border-radius: 10px;       /* Скругление краёв карточки */
+    overflow: hidden;          /* Обрезает содержимое, выходящее за пределы */
+    border: 1px solid;         /* Тонкая рамка по умолчанию (цвет задается ниже) */
+    border-color: #000000;     /* Чёрная рамка */
+    box-shadow: 0px 4px 15px 1px #00000040; /* Мягкая белая тень для поднятия карточки над фоном */
+    backdrop-filter: blur(2px) brightness(100%); /* Размытие и яркость заднего фона внутри карточки */
+    -webkit-backdrop-filter: blur(2px) brightness(100%); /* То же для Safari */
+    box-sizing: border-box;    /* Размеры карточки включают отступы и рамки */
+}
+
+.top-routes-html .IMG {
+    position: absolute;        /* Разблокирует свободное позиционирование внутри .div */
+    top: 0;                    /* Прижимает изображение к верхнему краю карточки */
+    left: 0;                   /* Прижимает изображение к левому краю карточки */
+    width: 100%;               /* Растягивает изображение на всю ширину карточки */
+    height: 135px;             /* На всю высоту карточки */
+    object-fit: cover;         /* Обрезает изображение для заполнения блока без искажения */
+}
+
+/* Оформление текста в карточках маршрутов */
+.top-routes-html .route-card-text {    /* Общие свойства */ 
+    font-family: 'Jura', sans-serif;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    position: absolute;
+}
+
+.top-routes-html .text-num-of-route {
+    top: 10px; left: 10px;     /* Позиционирование в левом верхнем углу карточки (например, номер маршрута) ВОЗМОЖНО ТУТ ПРОБЛЕМА*/
+    width: 14px;               /* Ширина элемента */
+    font-family: 'Jura', sans-serif; /* Шрифт */
+    font-weight: 700;          /* Жирный текст */
+    position: absolute;        /* Абсолютное позиционирование внутри .div */
+    color: #000000;            /* Чёрный цвет текста */
+    font-size: 16px;           /* Размер текста */
+    letter-spacing: 0;         /* Без изменения межбуквенного расстояния */
+    line-height: normal;       /* Обычная высота строки */
+}
+
+.top-routes-html .text-name-of-route { /* Индивидуальные параметры */
+    top: 10px;
+    left: 33px;
+    right: 10px;
+    width: auto;
+    max-width: calc(100% - 43px);
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.top-routes-html .text-author {       /* Индивидуальные параметры */
+    right: 10px;
+    bottom: 10px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.top-routes-html .text-distance {     /* Индивидуальные параметры */
+    top: 106px;
+    left: 33px;
+    font-weight: 400;
+}
+
+.top-routes-html .text-difficulty {   /* Индивидуальные параметры */
+    top: 77px;
+    left: 33px;
+    font-weight: 400;
+}
+
+.top-routes-html .text-likes {        /* Индивидуальные параметры */
+    top: 48px;
+    left: 33px;
+    font-weight: 400;
+}
+
+.top-routes-html .avatar-of-author {  /* Класс для аватарки автора внутри карточки маршрута, применяется только к элементу внутри .top-routes-html */
+    position: absolute;        /* Позволяет разместить аватарку точно в определённом месте внутри родительской карточки (карточка должна иметь position: relative) */
+    right: 81px;               /* Отступ аватарки от правого края карточки на 81px; отвечает за горизонтальное положение аватарки */
+    bottom: 9px;               /* Отступ аватарки от нижнего края карточки на 9px; отвечает за вертикальное положение */
+    width: 20px;               /* Фиксированная ширина аватарки — миниатюрная иконка */
+    height: 20px;              /* Фиксированная высота аватарки для квадратного изображения */
+    aspect-ratio: 1;           /* Пропорция изображения — строго квадратная (ширина и высота одинаковы) */
+    object-fit: cover;         /* Картинка аватарки заполняет весь блок, не растягивается и не искажается — "отрезается" лишнее, чтобы сохранить композицию */
+}
+
+.top-routes-html .route-icon { /* Общие параметры иконок в карточках маршрутов */
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+.top-routes-html .distance   { top: 106px; left: 10px; } /* Индивидуальные параметры иконок в карточках маршрутов */
+.top-routes-html .difficulty { top: 77px; left: 10px; }  /* Индивидуальные параметры иконок в карточках маршрутов */
+.top-routes-html .favorites  { top: 48px; left: 10px; }  /* Индивидуальные параметры иконок в карточках маршрутов */
+
+                                              
 /* Media query for mobile screens */
 @media (max-width: 375px) {
 .top-routes-html .div {
