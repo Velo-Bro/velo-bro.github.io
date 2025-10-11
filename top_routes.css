@@ -172,8 +172,7 @@
 .top-routes-html .difficulty { top: 77px; left: 10px; }  /* Индивидуальные параметры иконок в карточках маршрутов */
 .top-routes-html .favorites  { top: 48px; left: 10px; }  /* Индивидуальные параметры иконок в карточках маршрутов */
 
-
-/* Стили кнопок во всплывающем меню */
+                                                /* Стили кнопок во всплывающем меню */
 .bttn {
     width: 284px;
     min-width: 0;
@@ -219,8 +218,7 @@
     z-index: 2;
 }
 
-/* Social media wrapper styles from index.html */
-.social-logo-wrapper {
+.social-logo-wrapper {     /* КНОПКИ СОЦСЕТЕЙ */
     width: 46px;
     height: 46px;
     display: flex;
@@ -246,60 +244,47 @@
     height: 40px;
     object-fit: cover;
 }
-/* Popup Navigation Menu Styles */
+
+                                                /* Popup Navigation Menu Styles */
 .nav-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: transparent;
     z-index: 998;
-    /* replaced display toggling with pointer-events + opacity */
-    display: block;
     pointer-events: none;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s;
 }
 .nav-overlay.active {
-    /* display removed; interactivity via pointer-events */
     pointer-events: all;
     opacity: 1;
-    align-items: flex-start;
-    justify-content: center;
 }
+
 .nav-popup {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    max-width: 100vw;
-    height: auto;
+    top: 0; left: 0;
+    width: 100vw; max-width: 100vw;
     max-height: calc(100vh - 40px);
-    background-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255,255,255,0.6);
     border-radius: 0 0 24px 24px;
-    border: none;
-    box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 15px 1px rgba(0,0,0,0.25);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 999;
-    padding: 20px;
-    padding-top: 60px;
-    padding-bottom: 0;
+    padding: 60px 20px 0 20px;
     box-sizing: border-box;
-    /* replaced display toggling with pointer-events + opacity */
-    display: block;
     pointer-events: none;
     opacity: 0;
     transform: translateY(-120%);
-    transition: transform 0.35s cubic-bezier(0.7, 0, 0.3, 1), opacity 0.3s;
+    transition: transform 0.35s cubic-bezier(0.7,0,0.3,1), opacity 0.3s;
 }
 .nav-popup.active {
-    /* display removed; interactivity via pointer-events */
     pointer-events: all;
     opacity: 1;
     transform: translateY(0);
 }
+
 /* Close button positioned absolutely in top-right */
 .nav-close {
     position: absolute;
@@ -345,30 +330,31 @@
     justify-content: center;
     margin-bottom: 30px;
 }
+
 /* Media query for mobile screens */
 @media (max-width: 375px) {
-    .top-routes-html .div {
-        width: calc(100vw - 32px);
-        max-width: 100vw;
-    }
+.top-routes-html .div {
+    width: calc(100vw - 32px); /* Ширина карточки — весь экран минус 32px для боковых отступов */
+    max-width: 100vw; /* Максимальная ширина не превышает ширину окна браузера */
+}
 
     .top-routes-html .view {
         width: calc(100vw - 0px);
-        max-width: 100vw;
+        max-width: 100vw; / *Панель никогда не выйдет за ширину экрана */
     }
 
     .top-routes-html .element {
-        width: calc(100vw - 105px);
-        max-width: 100vw;
+        width: calc(100vw - 105px); /* Элемент занимает ширину экрана за вычетом 105px (вероятно, место для боковых иконок или отступов) */
+        max-width: 100vw; /* Не позволит выйти за пределы окна */
     }
 
     .nav-popup {
-        max-height: calc(100vh - 40px);
-        padding-top: 60px;
-        padding-bottom: 0;
+        max-height: calc(100vh - 40px); /* Максимальная высота попапа — экран по высоте минус 40px (оставляет "воздух" сверху/снизу) */
+        padding-top: 60px; /* Внутренний отступ сверху — пространство для иконки закрытия или "шапки" меню */
+        padding-bottom: 0; /* Никакого внутреннего отступа снизу */
     }
 
     .nav-content {
-        max-height: calc(100vh - 164px);
+        max-height: calc(100vh - 164px); /* Основной контейнер навигации не превышает всю высоту экрана минус 164px (позволяет помещать другие элементы, предотвращает переполнение) */
     }
 }
