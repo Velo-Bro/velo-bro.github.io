@@ -94,7 +94,7 @@
     object-fit: cover;         /* Обрезает изображение для заполнения блока без искажения */
 }
 
-.top-routes-html .text-wrapper {
+.top-routes-html .text-num-of-route {
     top: 10px; left: 10px;     /* Позиционирование в левом верхнем углу карточки (например, номер маршрута) ВОЗМОЖНО ТУТ ПРОБЛЕМА*/
     width: 14px;               /* Ширина элемента */
     font-family: 'Jura', sans-serif; /* Шрифт */
@@ -106,7 +106,7 @@
     line-height: normal;       /* Обычная высота строки */
 }
 
-.top-routes-html .text-wrapper-2 {
+.top-routes-html .text-name-of-route {
     top: 10px;
     left: 33px;
     right: 10px;
@@ -123,7 +123,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.top-routes-html .text-wrapper-3 {
+.top-routes-html .text-author {
     right: 10px;
     bottom: 10px;
     font-family: 'Jura', sans-serif;
@@ -136,7 +136,7 @@
     letter-spacing: 0;
     line-height: normal;
 }
-.top-routes-html .text-wrapper-4 {
+.top-routes-html .text-distance {
     position: absolute;
     top: 106px;
     left: 33px;
@@ -148,7 +148,7 @@
     line-height: normal;
     white-space: nowrap;
 }
-.top-routes-html .text-wrapper-5 {
+.top-routes-html .text-difficulty {
     top: 77px;
     left: 33px;
     font-family: 'Jura', sans-serif;
@@ -160,7 +160,7 @@
     letter-spacing: 0;
     line-height: normal;
 }
-.top-routes-html .text-wrapper-6 {
+.top-routes-html .text-likes {
     top: 48px;
     left: 33px;
     font-family: 'Jura', sans-serif;
