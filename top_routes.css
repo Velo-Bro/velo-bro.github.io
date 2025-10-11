@@ -220,9 +220,7 @@
 }
 
 /* Social media wrapper styles from index.html */
-.logo-telegram-wrapper,
-.logo-dzen-wrapper,
-.logo-youtube-wrapper {
+.social-logo-wrapper {
     width: 46px;
     height: 46px;
     display: flex;
@@ -238,9 +236,7 @@
     -webkit-backdrop-filter: blur(2px) brightness(100%);
     cursor: pointer;
 }
-.logo-telegram,
-.logo-dzen,
-.logo-youtube {
+.social-logo {
     aspect-ratio: 1;
     width: 40px;
     height: 40px;
