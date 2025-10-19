@@ -1,3 +1,309 @@
+.yahroma-dubna-html {
+  background-color: #ffffff;
+  width: 100vw;
+  max-width: 375px;
+  /* Removed conflicting top margin; rely on padding-top to offset fixed header */
+  margin: 0 auto; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Jura', sans-serif;
+  box-sizing: border-box;
+  padding-bottom: 24px;
+  /* Keep this equal to the fixed header height to prevent overlap */
+  padding-top: 56px;
+}
+/* ВЕРХНЯЯ ПАНЕЛЬ .view — как в top_routes.css */
+.yahroma-dubna-html .view {
+    /* Фиксированная верхняя навигационная панель */
+    position: fixed;                        /* Всегда видима */
+    top: 0;                                 /* Примыкает к верхнему краю окна */
+    left: 0;                                /* Примыкает к левому краю окна */
+    width: 100vw;                           /* На всю ширину вьюпорта */
+    z-index: 100;                           /* Поверх контента */
+    background: rgba(255,255,255,0.6);      /* Полупрозрачный фон */
+    backdrop-filter: blur(10px);            /* Эффект стекла */
+    -webkit-backdrop-filter: blur(10px);    /* Safari/Webkit */
+    box-shadow: 0 4px 15px 0 rgba(0,0,0,0.25); /* Тень снизу */
+    border: none;
+    border-radius: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    max-width: none;
+    padding-right: 0;
+    gap: 8px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.yahroma-dubna-html .vector {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+}
+.yahroma-dubna-html .element {
+    width: calc(100vw - 105px);
+    max-width: 275px;
+    height: 24px;
+    font: 400 20px/normal 'Jura', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: #000000;
+    box-sizing: border-box;
+}
+.yahroma-dubna-html .group {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 11.1px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+/* ДОБАВЛЕНИЕ CSS: стили блока избранное, место, автор */
+.fav-rank-author {
+  /* Комментарий: контейнер под верхней панелью */
+  margin: 0 20px;
+  margin-top: 8px;
+  display: flex;
+
+
+
+
+
+
+
+
+
+
+  align-items: center;
+  gap: 16px;
+  padding: 8px 12px;
+  background: #F8F8FA;
+  border: 1px solid #E6E6EA;
+  border-radius: 12px;
+}
+.fav-rank-author .icon-fav,
+.fav-rank-author .icon-rank,
+.fav-rank-author .author {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #000;
+  font: 500 16px 'Jura', sans-serif;
+}
+.fav-rank-author img { width: 20px; height: 20px; object-fit: contain; }
+.fav-rank-author .fav-count,
+.fav-rank-author .rank-count { font-weight: 600; font-size: 16px; }
+.fav-rank-author .author { margin-left: auto; }
+.fav-rank-author .author-avatar { width: 24px; height: 24px; border-radius: 50%; border: 1px solid #DDD; }
+@media (max-width: 375px) {
+  .fav-rank-author { margin: 0 16px; margin-top: 8px; padding: 8px 10px; gap: 12px; }
+}
+/* КОНЕЦ ДОБАВЛЕНИЯ CSS */
+/* Ensure page can scroll and header remains fixed */
+html, body { overflow: auto; }
+/* Стили кнопок во всплывающем меню */
+.bttn {
+    width: 284px;
+    min-width: 0;
+    overflow: visible;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.45);
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.25);
+    backdrop-filter: blur(2px) brightness(100%);
+    -webkit-backdrop-filter: blur(2px) brightness(100%);
+    font-family: "Jura", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.bttn:active { box-shadow: 0 2px 4px 0 rgba(0,0,0,.25); }
+.bttn:focus { outline: none; border-color: #bbb; }
+.route-btn--map {
+    background-image: url('img/image-14.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.route-btn--map::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    pointer-events: none;
+    z-index: 1;
+}
+.route-btn--map > span,
+.route-btn--map .text-wrapper-7 {
+    position: relative;
+    z-index: 2;
+}
+.social-logo-wrapper {     /* КНОПКИ СОЦСЕТЕЙ */
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff73;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.25);
+    backdrop-filter: blur(2px) brightness(100%);
+    -webkit-backdrop-filter: blur(2px) brightness(100%);
+    cursor: pointer;
+}
+.social-logo-wrapper:active {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+}
+.social-logo {
+    aspect-ratio: 1;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+/* Popup Navigation Menu Styles */
+.nav-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: transparent;
+    z-index: 998;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.nav-overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
+.nav-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    max-width: 100vw;
+    max-height: calc(100vh - 40px);
+    background: rgba(255,255,255,0.6);
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 15px 1px rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 999;
+    padding: 60px 20px 0 20px;
+    box-sizing: border-box;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-120%);
+    transition: transform 0.35s cubic-bezier(0.7,0,0.3,1), opacity 0.3s;
+}
+.nav-popup.active {
+    pointer-events: all;
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Close button positioned absolutely in top-right */
+.nav-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 26px;
+    height: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    z-index: 1000;
+}
+.nav-close img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* Content container with flex column layout */
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: calc(100vh - 164px);
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+    overflow: visible;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.nav-social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+/* Обертки для равных полей по краям — уникальные */
+.container { margin: 0 20px; }
+@media (max-width: 375px) { .container { margin: 0 16px; } }
+/* Галерея — уникальные стили */
+.view-2 { margin: 0 20px; display: flex; gap: 8px; border: 1px solid #E0E0E0; border-radius: 14px; overflow: hidden; }
+.view-2 .IMG-2 { flex: 2; display: block; width: 100%; height: 180px; object-fit: cover; }
+.view-2 .vlcsnap, .view-2 .vlcsnap-2 { flex: 1; display: block; width: 100%; height: 86px; object-fit: cover; }
+.view-2 .vlcsnap { border-bottom: 8px solid transparent; }
+@media (max-width: 375px) { .view-2 { margin: 0 16px; } }
+/* Блок кнопок — .div-wrapper* как в top_routes.css */
+.button-block { margin: 0 20px; background: #F5F5F5; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.div-wrapper, .div-wrapper-2, .div-wrapper-3, .div-wrapper-4 { width: 284px; min-width: 0; overflow: visible; height: 46px; display: flex; align-items: center; justify-content: center; background-color: #ffffff73; border-radius: 10px; border: 1px solid; border-color: #000000; box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.07); backdrop-filter: blur(2px) brightness(100%); -webkit-backdrop-filter: blur(2px) brightness(100%); font-family: 'Jura', Helvetica, Arial, sans-serif; font-weight: 400; color: #000000; text-decoration: none; cursor: pointer; }
+.div-wrapper:active, .div-wrapper-2:active, .div-wrapper-3:active, .div-wrapper-4:active { box-shadow: 0 2px 4px 0 rgba(0,0,0,.25); }
+.div-wrapper:focus, .div-wrapper-2:focus, .div-wrapper-3:focus, .div-wrapper-4:focus { outline: none; border-color: #bbb; }
+/* спец-кнопка карта */
+.div-wrapper-4 { background-image: url('img/image-14.png'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; }
+.div-wrapper-4::after { content: ''; position: absolute; inset: 0; background: rgba(255, 255, 255, 0.3); border-radius: 10px; pointer-events: none; z-index: 1; }
+.div-wrapper-4 > span, .div-wrapper-4 .text-wrapper-7 { position: relative; z-index: 2; }
+@media (max-width: 375px) { .button-block { margin: 0 16px; } }
+/* Характеристики — уникальные стили */
+.view-4 { margin: 0 20px; background: #F9F9F9; border-radius: 14px; padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 24px; align-items: start; }
+.view-4 .text-wrapper-10, .view-4 .text-wrapper-12, .view-4 .text-wrapper-14, .view-4 .text-wrapper-16, .view-4 .text-wrapper-19 { font: 400 15px 'Jura', sans-serif; color: #666; line-height: 1.2; }
+.view-4 .text-wrapper-11, .view-4 .text-wrapper-13, .view-4 .text-wrapper-15, .view-4 .text-wrapper-17, .view-4 .text-wrapper-18, .view-4 .text-wrapper-20 { font: 500 17px 'Jura', sans-serif; color: #000; line-height: 1.2; }
+.view-4 .vector-3, .view-4 .vector-4 { width: 16px; height: 16px; align-self: center; }
+@media (max-width: 375px) { .view-4 { margin: 0 16px; gap: 12px 16px; padding: 16px; } }
+/* Описание и Как добраться — уникальные */
+.view-5, .view-6 { margin: 0 20px; }
+.view-5 .text-wrapper-21, .view-6 .text-wrapper-21 { font: 700 20px 'Jura', sans-serif; color: #000; margin-bottom: 12px; line-height: 1.3; }
+.view-5 .p, .view-6 .element { font: 400 16px 'Jura', sans-serif; color: #000; line-height: 1.6; margin: 0 0 16px; }
+@media (max-width: 375px) { .view-5, .view-6 { margin: 0 16px; } }
+/* Полезные ссылки — уникальные */
+.view-7 { margin: 0 20px; }
+.view-7 .text-wrapper-21 { font: 700 20px 'Jura', sans-serif; margin-bottom: 12px; }
+.view-7 a { display: inline-flex; align-items: center; gap: 8px; color: #007AFF; text-decoration: none; font: 400 16px 'Jura', sans-serif; margin-bottom: 8px; }
+.view-7 a::after { content: '→'; font-size: 14px; transition: transform .2s ease; }
+.view-7 a:hover { color: #0056CC; text-decoration: underline; }
+.view-7 a:hover::after { transform: translateX(2px); }
+@media (max-width: 375px) { .view-7 { margin: 0 16px; } }
+
 /* Комментарии — уникальные */
 .view-
 
