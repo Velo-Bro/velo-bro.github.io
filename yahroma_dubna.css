@@ -68,9 +68,39 @@
     flex-shrink: 0;
     cursor: pointer;
 }
+/* ДОБАВЛЕНИЕ CSS: стили блока избранное, место, автор */
+.fav-rank-author {
+  /* Комментарий: контейнер под верхней панелью */
+  margin: 0 20px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 12px;
+  background: #F8F8FA;
+  border: 1px solid #E6E6EA;
+  border-radius: 12px;
+}
+.fav-rank-author .icon-fav,
+.fav-rank-author .icon-rank,
+.fav-rank-author .author {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #000;
+  font: 500 16px 'Jura', sans-serif;
+}
+.fav-rank-author img { width: 20px; height: 20px; object-fit: contain; }
+.fav-rank-author .fav-count,
+.fav-rank-author .rank-count { font-weight: 600; font-size: 16px; }
+.fav-rank-author .author { margin-left: auto; }
+.fav-rank-author .author-avatar { width: 24px; height: 24px; border-radius: 50%; border: 1px solid #DDD; }
+@media (max-width: 375px) {
+  .fav-rank-author { margin: 0 16px; margin-top: 8px; padding: 8px 10px; gap: 12px; }
+}
+/* КОНЕЦ ДОБАВЛЕНИЯ CSS */
 /* Ensure page can scroll and header remains fixed */
 html, body { overflow: auto; }
-
 /* Стили кнопок во всплывающем меню */
 .bttn {
     width: 284px;
@@ -263,13 +293,4 @@ html, body { overflow: auto; }
 .view-7 a:hover::after { transform: translateX(2px); }
 @media (max-width: 375px) { .view-7 { margin: 0 16px; } }
 /* Комментарии — уникальные */
-.view-8 { margin: 0 20px; }
-.view-8 .text-wrapper-21 { font: 700 20px 'Jura', sans-serif; margin-bottom: 12px; }
-.view-9, .view-10 { background: #F6F6F8; border: 1px solid #D0D0D0; border-radius: 12px; padding: 12px 14px; color: #000; }
-.view-9 .text-wrapper-24, .view-10 .text-wrapper-25 { color: #BDBDBD; }
-.attach-wrapper, .send-wrapper { display: flex; align-items: center; justify-content: center; width: 46px; height: 46px; border: 1px solid #E0E0E0; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
-.attach, .send { width: 24px; height: 24px; object-fit: contain; }
-@media (max-width: 375px) { .view-8 { margin: 0 16px; } }
-/* Медиа-запросы для попапа */
-@media (max-width: 375px) { .yahroma-dubna-html .view { width: calc(100vw - 0px); max-width: 100vw; } .yahroma-dubna-html .element { width: calc(100vw - 105px); max-width: 100vw; } .nav-popup { max-height: calc(100vh - 40px); padding-top: 60px; padding-bottom: 0; } .nav-content { max-height: calc(100vh - 164px); } }
-/* Шапка карточки
+.view-
