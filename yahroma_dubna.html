@@ -19,6 +19,24 @@
             <div class="element">Топ маршрутов</div>
             <img class="group" src="img/hamburger.svg" id="menu-hamburger" alt="Menu" />
       </div>
+      <!-- ДОБАВЛЕНИЕ: Блок избранное, место, автор -->
+      <!-- Блок избранное, место, автор -->
+      <div class="fav-rank-author">
+        <span class="icon-fav">
+          <img src="img/star_pressed.svg" alt="Избранное" />
+          <span class="fav-count">18</span>
+        </span>
+        <span class="icon-rank">
+          <img src="img/trophy.svg" alt="Место" />
+          <span class="rank-count">1</span>
+        </span>
+        <span class="author">
+          Велобро
+          <img src="img/author-avatar.png" alt="Аватар" class="author-avatar" />
+        </span>
+      </div>
+      <!-- Конец блока избранное, место, автор -->
+      <!-- КОНЕЦ ДОБАВЛЕНИЯ -->
       <div class="div">
         <img src="img/photo/route-ya-du/route-ya-du-krest.png" alt="Route" class="IMG">
         <div class="text-wrapper">1</div>
@@ -94,18 +112,18 @@
       </div>
       <div class="view-7">
         <div class="text-wrapper-21">Полезные ссылки</div>
-        <a href="https://dzen.ru/a/Z2c2sbbDFHMjnuyL" rel="noopener noreferrer" target="_blank"><p class="text-wrapper-23">Текстовый обзор "Вело 1" от 24.12.24</p></a>
-        <a href="https://www.youtube.com/watch?v=HtV_T0dXMJs" rel="noopener noreferrer" target="_blank"><p class="text-wrapper-23">Видео обзор "Вело 1" от 16.06.25</p></a>
+        <a href="https://dzen.ru/a/Z2c2sbbDFHMjnuyL" target="_blank" rel="noopener noreferrer"><p class="text-wrapper-23">Текстовый обзор "Вело 1" от 24.12.24</p></a>
+        <a href="https://www.youtube.com/watch?v=HtV_T0dXMJs" target="_blank" rel="noopener noreferrer"><p class="text-wrapper-23">Видео обзор "Вело 1" от 16.06.25</p></a>
       </div>
       <div class="view-8">
         <div class="text-wrapper-21">Комментарии</div>
         <div class="view-9"><div class="text-wrapper-24">Укажите имя...</div></div>
         <div class="view-10"><div class="text-wrapper-25">Поделитесь впечатлениями...</div></div>
-        <div class="attach-wrapper"><img src="img/attach.svg" alt="Attach" class="attach"></div>
-        <div class="send-wrapper"><img src="img/send.svg" alt="Send" class="send"></div>
+        <div class="attach-wrapper"><img class="attach" src="img/attach.svg" alt="Attach" /></div>
+        <div class="send-wrapper"><img class="send" src="img/send.svg" alt="Send" /></div>
       </div>
       <div class="view-11">
-        <img src="img/logo.svg" alt="User" class="image-4">
+        <img src="img/user-icon.svg" alt="User" class="image-4">
         <div class="text-wrapper-26">ВелоБро</div>
         <div class="text-wrapper-27">20.07.25 / 22:58</div>
         <p class="text-wrapper-28">Это, действительно, лучший на сегодняшний день веломаршрут в России. По крайней мере, из "официальных" и подготовленных. Отличный проект, который нельзя бросать!</p>
@@ -113,29 +131,27 @@
         <img src="img/photo/route-ya-du/route-ya-du-most.png" alt="Photo" class="vlcsnap-3">
       </div>
     </div>
-
   <!-- Navigation Menu -->
         <div class="nav-overlay" id="nav-overlay"></div>
         <div class="nav-popup" id="nav-popup">
             <button class="nav-close" id="nav-close">
-                <img src="img/icons/close.svg" alt="Close" />
+                <img src="img/close.svg" alt="Close">
             </button>
             <div class="nav-content">
                 <div class="nav-links">
-                    <button class="bttn" onclick="window.location.href='index.html'"><span>Главная</span></button>
-                    <button class="bttn" onclick="window.location.href='Top_routes.html'"><span>Топ маршрутов</span></button>
-                    <button class="bttn" onclick="window.location.href='#'"><span>Подбор по параметрам</span></button>
-                    <button class="bttn" onclick="window.location.href='#'"><span>Мероприятия</span></button>
-                    <button class="bttn route-btn--map" onclick="window.location.href='#'"><span>Все маршруты на карте</span></button>
+                    <button class="bttn" onclick="window.location.href='index.html'">Главная</button>
+                    <button class="bttn" onclick="window.location.href='Top_routes.html'">Топ маршрутов</button>
+                    <button class="bttn" onclick="window.location.href='#'">Подбор по параметрам</button>
+                    <button class="bttn" onclick="window.location.href='#'">Мероприятия</button>
+                    <button class="bttn route-btn--map" onclick="window.location.href='#'">Все маршруты на карте</button>
                 </div>
                 <div class="nav-social">
-                    <a class="social-logo-wrapper" href="https://t.me/velo_brother" target="_blank" rel="noopener"><img class="social-logo" src="img/icons/logo-telegram.png" alt="Telegram" /></a>
-                    <a class="social-logo-wrapper" href="https://dzen.ru/velo_brother" target="_blank" rel="noopener"><img class="social-logo" src="img/icons/logo-dzen.png" alt="Dzen" /></a>
-                    <a class="social-logo-wrapper" href="https://youtube.com/@velo_brother" target="_blank" rel="noopener"><img class="social-logo" src="img/icons/logo-youtube.png" alt="YouTube" /></a>
+                    <a href="https://t.me/velo_brother" target="_blank" rel="noopener" class="social-logo-wrapper"><img src="img/telegram.svg" alt="Telegram" class="social-logo"></a>
+                    <a href="https://dzen.ru/velo_brother" target="_blank" rel="noopener" class="social-logo-wrapper"><img src="img/dzen.svg" alt="Dzen" class="social-logo"></a>
+                    <a href="https://youtube.com/@velo_brother" target="_blank" rel="noopener" class="social-logo-wrapper"><img src="img/youtube.svg" alt="YouTube" class="social-logo"></a>
                 </div>
             </div>
         </div>
-        
         <script>
             // Navigation menu functionality
             const hamburger = document.getElementById('menu-hamburger');
@@ -160,8 +176,5 @@
             navClose.addEventListener('click', closeMenu);
             navOverlay.addEventListener('click', closeMenu);
         </script>
-
-
-    
-  </body>
+    </body>
 </html>
