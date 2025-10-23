@@ -273,42 +273,37 @@ html, body { overflow: auto; }
   flex-direction: row;      /* ОДНОЙ СТРОКОЙ! */
   align-items: center;
   justify-content: flex-start; /* Слева, как макет (чтобы не "выдавливало" вправо) */
-  gap: 28px;
-  margin: 16px 0 0 16px;   /* Левый отступ 16-18px, как в макете */
+  flex-wrap: nowrap;           /* !!! Не переносить в столбец, даже если не помещается !!! */
+  gap: 16px;                   /* Уменьшил gap, чтоб вместилось в 375px */
+  margin: 12px 0 0 16px;       /* Отступ */
   padding: 0;
   background: none;
   box-shadow: none;
   border: none;
   min-height: 36px;         /* Высота как у иконок */
-  width: auto;              /* Ширина auto — НЕ 100%; иначе любые ограничения родителя ломают блок */}
+  width: calc(100% - 32px); /* Чётко учитывает левый и правый margin, чтобы не ломался во flex-каркасе */
 }
 
 .icon-fav, .icon-rank, .author {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 .fav-icon, .rank-icon, .author-avatar {
-  width: 36px; height: 36px;
+  width: 32px; height: 32px;
   display: block;
 }
-.fav-count, .rank-count {
-  font-size: 32px;
-  color: #111;
+.fav-count, .rank-count, .author {
+  font-size: 26px;
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 400;
-  line-height: 1;
-}
-.author {
-  font-size: 32px;
   color: #111;
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-weight: 400;
   line-height: 1;
 }
+
 .author-avatar {
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 @media (max-width: 370px) {
