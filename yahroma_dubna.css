@@ -68,37 +68,7 @@
     flex-shrink: 0;
     cursor: pointer;
 }
-/* ДОБАВЛЕНИЕ CSS: стили блока избранное, место, автор */
-.fav-rank-author {
-  /* Комментарий: контейнер под верхней панелью */
-  margin: 0 20px;
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 8px 12px;
-  background: #F8F8FA;
-  border: 1px solid #E6E6EA;
-  border-radius: 12px;
-}
-.fav-rank-author .icon-fav,
-.fav-rank-author .icon-rank,
-.fav-rank-author .author {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: #000;
-  font: 500 16px 'Jura', sans-serif;
-}
-.fav-rank-author img { width: 20px; height: 20px; object-fit: contain; }
-.fav-rank-author .fav-count,
-.fav-rank-author .rank-count { font-weight: 600; font-size: 16px; }
-.fav-rank-author .author { margin-left: auto; }
-.fav-rank-author .author-avatar { width: 24px; height: 24px; border-radius: 50%; border: 1px solid #DDD; }
-@media (max-width: 375px) {
-  .fav-rank-author { margin: 0 16px; margin-top: 8px; padding: 8px 10px; gap: 12px; }
-}
-/* КОНЕЦ ДОБАВЛЕНИЯ CSS */
+
 /* Ensure page can scroll and header remains fixed */
 html, body { overflow: auto; }
 /* Стили кнопок во всплывающем меню */
