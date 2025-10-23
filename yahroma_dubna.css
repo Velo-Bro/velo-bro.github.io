@@ -273,37 +273,39 @@ html, body { overflow: auto; }
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: flex-start;
   gap: 10px;
   margin: 8px 0 0 16px;
   background: none; border: none; box-shadow: none;
-  width: auto; max-width: calc(100vw - 32px); /* всегда влезает! */
-  min-height: 32px;
-  overflow: hidden;
+  min-height: 20px;
+  width: auto;
 }
 .icon-fav, .icon-rank, .author {
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap: 3px;
+  gap: 4px;
 }
 .fav-icon, .rank-icon, .author-avatar {
-  width: 20px; height: 20px; /* Реально уменьшено до "иконок мобильного интерфейса" */
+  width: 20px; height: 20px;
+  display: block;
 }
-.fav-count, .rank-count {
-  font-size: 16px;
-  font-family: 'Montserrat', Arial, sans-serif;
+.fav-count, .rank-count, .author {
+  font-size: 20px;                /* КАК В ФИГМЕ */
+  font-family: 'Jura', sans-serif; /* ТОЛЬКО Jura, как указано в макете! */
   font-weight: 400;
   color: #111;
-}
-.author {
-  font-size: 16px;
-  color: #111;
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-weight: 400;
+  line-height: 1;
 }
 .author-avatar {
-  margin-left: 5px;
+  margin-left: 6px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: none;
+  border: none;
 }
+
+
 
 
 @media (max-width: 370px) {
