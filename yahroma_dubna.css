@@ -299,71 +299,54 @@ html, body { overflow: auto; }
 
 /* ==== Блок "избранное, место, автор" — начало ==== */
 .fav-rank-author {
-  display: flex;                /* Горизонтальное размещение элементов */
-  align-items: center;          /* Вертикальное центрирование */
-  justify-content: flex-end;    /* Прижимаем вправо */
-  gap: 28px;                    /* Промежуток между группами */
-  margin: 16px 0 0 0;           /* Отступ сверху от шапки как на картинке */
-  padding-right: 16px;          /* Правый отступ внутри блока */
-  background: none;             /* Нет фона/заливки */
-  box-shadow: none;             /* Нет тени */
-  border: none;                 /* Нет рамки */
-  min-height: 56px;             /* Высота, как у панели сверху */
-  width: 100%;                  /* На всю ширину контейнера */
+  /* ... */
+  align-items: center;          /* Центрирует элементы блока по вертикали внутри flex-контейнера */
+  min-height: 56px;             /* Минимальная высота блока для совмещения с шапкой */
+  width: 100%;                  /* Блок занимает всю доступную ширину родителя */
 }
 .icon-fav {
-  display: flex;                /* Значок и цифра в линию */
-  align-items: center;
-  gap: 8px;                     /* Промежуток между звездой и числом */
+  align-items: center;          /* Центрирует иконку и цифру по вертикали */
 }
 .fav-icon {
-  width: 36px; height: 36px;    /* Размер иконки звезды */
-  display: block;
+  display: block;               /* Изображение ведёт себя как блочный элемент, чтобы не было лишнего пространства вокруг картинки */
 }
 .fav-count {
-  font-size: 32px;              /* Размер цифры */
-  color: #111;
-  font-family: 'Jura', 'Montserrat', Arial, sans-serif;
-  font-weight: 400;
-  line-height: 1;
+  color: #111;                  /* Цвет цифры — глубокий чёрный, соответствует макету */
+  font-family: 'Jura', 'Montserrat', Arial, sans-serif; /* Использует указанные шрифты, графичные как в макете */
+  font-weight: 400;             /* Обычная насыщенность шрифта */
+  line-height: 1;               /* Строчка максимально компактная по высоте */
 }
 .icon-rank {
-  display: flex;                /* Кубок и цифра в линию */
-  align-items: center;
-  gap: 8px;
+  align-items: center;          /* Кубок и цифра по вертикали выровнены */
 }
 .rank-icon {
-  width: 36px; height: 36px;    /* Размер кубка */
-  display: block;
+  display: block;               /* Кубок отображается блочно, без лишнего отступа */
 }
 .rank-count {
-  font-size: 32px;              /* Размер цифры */
-  color: #111;
-  font-family: 'Jura', 'Montserrat', Arial, sans-serif;
-  font-weight: 400;
-  line-height: 1;
+  color: #111;                  /* Цвет цифры для места, такой же как макет */
+  font-family: 'Jura', 'Montserrat', Arial, sans-serif; /* Шрифты для числа */
+  font-weight: 400;             /* Стиль (толщина) шрифта */
+  line-height: 1;               /* Строчка без дополнительных отступов */
 }
 .author {
-  display: flex;                /* Имя автора и аватар в строку */
-  align-items: center;
-  gap: 10px;                    /* Промежуток между текстом и аватаром */
-  font-size: 32px;
-  color: #111;
-  font-family: 'Jura', 'Montserrat', Arial, sans-serif;
-  font-weight: 400;
-  line-height: 1;
+  align-items: center;          /* Имя автора и аватар по вертикали выровнены */
+  font-size: 32px;              /* Имя автора такое же крупное, как цифры */
+  color: #111;                  /* Цвет имени автора */
+  font-family: 'Jura', 'Montserrat', Arial, sans-serif; /* Шрифт для имени автора */
+  font-weight: 400;             /* Толщина шрифта без жирности */
+  line-height: 1;               /* Минимальный межстрочный интервал */
 }
 .author-avatar {
-  width: 36px; height: 36px;    /* Размер аватара */
-  border-radius: 50%;           /* Круглый аватар */
-  object-fit: cover;            /* Обрезка по кругу */
-  display: block;
-  border: none;
-  background: none;
+  border-radius: 50%;           /* Делает аватар полностью круглым */
+  object-fit: cover;            /* Картинка внутри блока не искажает пропорции, а обрезается по кругу */
+  display: block;               /* Показывается как блочный элемент */
+  border: none;                 /* Отключает рамку */
+  background: none;             /* Нет фоновой заливки вокруг картинки */
 }
 @media (max-width: 370px) {
-  .fav-rank-author { gap: 14px; padding-right: 7px; }
-  .fav-icon, .rank-icon, .author-avatar { width: 28px; height: 28px; }
-  .fav-count, .rank-count, .author { font-size: 22px; }
+  /* Адаптивные стили для мобильных экранов: */
+  .fav-rank-author { gap: 14px; padding-right: 7px; } /* Уменьшаются промежутки и правый внутренний отступ */
+  .fav-icon, .rank-icon, .author-avatar { width: 28px; height: 28px; } /* Сужение всех иконок и аватара */
+  .fav-count, .rank-count, .author { font-size: 22px; } /* Все цифры и имя автора становятся меньше */
 }
 /* ==== Блок "избранное, место, автор" — конец ==== */
