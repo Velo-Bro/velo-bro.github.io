@@ -74,16 +74,6 @@
   margin: 0 20px;
   margin-top: 8px;
   display: flex;
-
-
-
-
-
-
-
-
-
-
   align-items: center;
   gap: 16px;
   padding: 8px 12px;
@@ -309,81 +299,71 @@ html, body { overflow: auto; }
 
 /* ==== Блок "избранное, место, автор" — начало ==== */
 .fav-rank-author {
-  display: flex; /* Горизонтальное размещение элементов */
-  align-items: center; /* Центрирование вертикально */
-  justify-content: flex-end; /* Всё прижато вправо */
-  gap: 28px; /* Промежуток между группами внутри блока */
-  margin: 16px 0 0 0; /* Отступ сверху до блока (нижний 0) */
-  padding-right: 16px; /* Прижимает контент к правому краю (как по Figma) */
-  background: none; /* Убирает фон — фон блока белый как у всего главного контента */
-  box-shadow: none; /* Убирает тень вокруг блока */
-  border: none; /* Нет обводки */
-  min-height: 54px; /* Высота по макету для выравнивания по верхней панели */
-  width: 100%; /* На всю ширину контейнера */
+  display: flex;                /* Горизонтальное размещение элементов */
+  align-items: center;          /* Вертикальное центрирование */
+  justify-content: flex-end;    /* Прижимаем вправо */
+  gap: 28px;                    /* Промежуток между группами */
+  margin: 16px 0 0 0;           /* Отступ сверху от шапки как на картинке */
+  padding-right: 16px;          /* Правый отступ внутри блока */
+  background: none;             /* Нет фона/заливки */
+  box-shadow: none;             /* Нет тени */
+  border: none;                 /* Нет рамки */
+  min-height: 56px;             /* Высота, как у панели сверху */
+  width: 100%;                  /* На всю ширину контейнера */
 }
 .icon-fav {
-  display: flex; /* Звезда и цифра в линию */
-  align-items: center; /* Центрирование по вертикали */
-  gap: 8px; /* Промежуток между звездой и цифрой */
+  display: flex;                /* Значок и цифра в линию */
+  align-items: center;
+  gap: 8px;                     /* Промежуток между звездой и числом */
 }
 .fav-icon {
-  width: 36px; /* Размер иконки как в макете (Figma) */
-  height: 36px;
-  display: block; /* Корректное поведение как картинки */
+  width: 36px; height: 36px;    /* Размер иконки звезды */
+  display: block;
 }
 .fav-count {
-  font-size: 32px; /* Крупная цифра: по макету */
-  color: #111; /* Цвет по макету */
-  font-family: 'Jura', 'Montserrat', Arial, sans-serif; /* Геометричный шрифт */
+  font-size: 32px;              /* Размер цифры */
+  color: #111;
+  font-family: 'Jura', 'Montserrat', Arial, sans-serif;
   font-weight: 400;
   line-height: 1;
 }
 .icon-rank {
-  display: flex; /* Кубок и место в линию */
-  align-items: center; /* Центрирование по вертикали */
-  gap: 8px; /* Промежуток между кубком и числом */
+  display: flex;                /* Кубок и цифра в линию */
+  align-items: center;
+  gap: 8px;
 }
 .rank-icon {
-  width: 36px; /* Размер кубка (Figma) */
-  height: 36px;
+  width: 36px; height: 36px;    /* Размер кубка */
   display: block;
 }
 .rank-count {
-  font-size: 32px; /* Крупная цифра */
+  font-size: 32px;              /* Размер цифры */
   color: #111;
   font-family: 'Jura', 'Montserrat', Arial, sans-serif;
   font-weight: 400;
   line-height: 1;
 }
 .author {
-  display: flex; /* Имя автора и аватар в строку */
+  display: flex;                /* Имя автора и аватар в строку */
   align-items: center;
-  gap: 10px; /* Промежуток между именем и аватаром */
-  font-size: 32px; /* Размер по макету */
+  gap: 10px;                    /* Промежуток между текстом и аватаром */
+  font-size: 32px;
   color: #111;
   font-family: 'Jura', 'Montserrat', Arial, sans-serif;
   font-weight: 400;
   line-height: 1;
 }
 .author-avatar {
-  width: 36px; /* Диаметр аватара по макету */
-  height: 36px;
-  border-radius: 50%; /* Круглый аватар */
-  object-fit: cover;
+  width: 36px; height: 36px;    /* Размер аватара */
+  border-radius: 50%;           /* Круглый аватар */
+  object-fit: cover;            /* Обрезка по кругу */
   display: block;
-  border: none; /* Нет лишних границ */
-  background: none; /* Нет фона */
+  border: none;
+  background: none;
 }
 @media (max-width: 370px) {
-  .fav-rank-author {
-    gap: 14px; /* Меньше промежутки на маленьких экранах */
-    padding-right: 7px; /* Меньше отступ справа */
-  }
-  .fav-icon, .rank-icon, .author-avatar {
-    width: 28px; height: 28px; /* Меньше иконки */
-  }
-  .fav-count, .rank-count, .author {
-    font-size: 22px; /* Меньше текст */
-  }
+  .fav-rank-author { gap: 14px; padding-right: 7px; }
+  .fav-icon, .rank-icon, .author-avatar { width: 28px; height: 28px; }
+  .fav-count, .rank-count, .author { font-size: 22px; }
 }
 /* ==== Блок "избранное, место, автор" — конец ==== */
