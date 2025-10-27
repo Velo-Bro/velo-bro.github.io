@@ -23,19 +23,21 @@
       </div>
 
 <!-- Блок избранное, место, автор -->
-<div class="fav-rank-author">
-  <span class="icon-fav">
-    <img src="img/icons/star-pressed.svg" alt="Избранное" class="fav-icon"/>      <!-- Иконка звезды -->
-    <span class="fav-count">18</span>                                             <!-- Счётчик избранного -->
-  </span>
-  <span class="icon-rank">
-    <img src="img/icons/award.svg" alt="Место" class="rank-icon"/>                <!-- Иконка места в рейтинге -->
-    <span class="rank-count">1</span>                                             <!-- Место в рейтинге (число) -->
-  </span>
-  <span class="author">
-    Велобро
-    <img src="img/mini-logo.png" alt="Аватар" class="author-avatar"/>             <!-- Аватар автора маршрута -->
-  </span>
+<div class="fav-rank-author">                <!-- Контейнер для всей полоски "избранное, место, автор"; основной flex-блок -->
+  <div class="left-group">                   <!-- Группа для блока слева: звезда + кубок -->
+    <span class="icon-fav">                  <!-- Блок "избранное" — иконка и число -->
+      <img src="img/icons/star-pressed.svg" class="fav-icon" /> <!-- Иконка звезды -->
+      <span class="fav-count">18</span>      <!-- Счётчик избранного -->
+    </span>
+    <span class="icon-rank">                 <!-- Блок "место в рейтинге" — иконка и число -->
+      <img src="img/icons/award.svg" class="rank-icon" /> <!-- Иконка кубка -->
+      <span class="rank-count">1</span>      <!-- Счётчик рейтинга -->
+    </span>
+  </div>
+  <div class="author">                       <!-- Блок автора — справа, имя и аватар -->
+    Велобро                                  <!-- Имя автора маршрута -->
+    <img src="img/mini-logo.png" class="author-avatar"/> <!-- Аватар автора маршрута -->
+  </div>
 </div>
 <!-- Конец блока избранное, место, автор -->
 
@@ -179,4 +181,5 @@
             navOverlay.addEventListener('click', closeMenu);
         </script>
     </body>
+
 </html>
