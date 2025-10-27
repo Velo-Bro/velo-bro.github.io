@@ -272,41 +272,39 @@ html, body { overflow: auto; }
   display: flex;
   align-items: center;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  gap: 10px;
-  margin: 8px 0 0 16px;
-  background: none; border: none; box-shadow: none;
-  min-height: 20px;
-  width: auto;
+  justify-content: flex-center;
+  gap: 18px;                     /* Можно немного увеличить для баланса */
+  margin: 18px 0 0 0;            /* только отступ сверху, чтобы блок "дышал" */
+  padding: 0;                    /* нет внутренних отступов */
+  width: 100%;
+  font-size: 20px;
 }
 .icon-fav, .icon-rank, .author {
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap: 4px;
+  gap: 6px;
 }
 .fav-icon, .rank-icon, .author-avatar {
   width: 20px; height: 20px;
   display: block;
 }
-.fav-count, .rank-count, .author {
-  font-size: 20px;                /* КАК В ФИГМЕ */
-  font-family: 'Jura', sans-serif; /* ТОЛЬКО Jura, как указано в макете! */
+.fav-count, .rank-count {
+  font-size: 20px;
+  font-family: 'Jura', sans-serif;
   font-weight: 400;
   color: #111;
   line-height: 1;
 }
-.author-avatar {
-  margin-left: 6px;
-  border-radius: 50%;
-  object-fit: cover;
-  background: none;
-  border: none;
+.author {
+  font-size: 20px;
+  font-family: 'Jura', sans-serif;
+  color: #222;
+  font-weight: 400;
 }
-
-
-
+.author-avatar {
+  margin-left: 4px; border-radius: 50%;
+}
 
 @media (max-width: 370px) {
   /* Адаптивные стили для мобильных экранов: */
